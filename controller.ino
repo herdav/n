@@ -24,9 +24,12 @@ void loop() {
   ultrasonic();
   if (Serial.available() > 0) {
     stream_server = Serial.read();
-    if (stream_server == '1')
-    {
-      control = !control;
+    if (stream_server == '1') {
+      control = HIGH;
+      digitalWrite(LED, control);
+    }
+    else {
+      control = LOW;
       digitalWrite(LED, control);
     }
     delay(100);
