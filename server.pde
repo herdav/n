@@ -19,6 +19,7 @@ int count_data = 0;
 
 Levels level_gas, level_wheat;
 int pegel_gas_ref, pegel_wheat_ref;
+int store = 10;
 
 String time;
 
@@ -47,12 +48,9 @@ void draw() {
 void serialEvent(Serial myPort) {
   portStream_arduino = myPort.readStringUntil('\n');
   if (portStream_arduino != null) {
-    //trim whitespace and formatting characters (like carriage return)
     portStream_arduino = trim(portStream_arduino);
     println(portStream_arduino);
 
-    //look for our 'A' string to start the handshake
-    //if it's there, clear the buffer, and send a request for data
     if (firstContact == false) {
       if (portStream_arduino.equals("arduino")) {
         myPort.clear();
@@ -60,14 +58,17 @@ void serialEvent(Serial myPort) {
         myPort.write("arduino");
         println("contacted");
       }
-    } else { //if we've already established contact, keep getting and parsing data
+    } else {
       println(portStream_arduino);
-      if (mousePressed == true) 
+      if (level_gas.run == true) 
       {
         myPort.write('1');
         println('1');
+      } else {
+        myPort.write('0');
+        println('0');
       }
-      //myPort.write("A");
+      //myPort.write('A');
     }
   }
 }
@@ -126,7 +127,9 @@ void draw_graphic() {
 }
 
 class Levels {
-  int x, y, level;
+  int x, y, level, cycle, int_val_pegel;
+  int[] store = new int[200];
+  boolean run;
 
   Levels(int xpos, int ypos) {
     x = xpos;
@@ -134,10 +137,38 @@ class Levels {
   }
 
   void display(int level, int pegel) {
-    int val_level, val_pegel;
+    int val_level;
+    int val_pegel;
+    int delta_level_pegel;
 
-    val_level = int(map(level, 0, 255, 0, height-100));
-    val_pegel = int(map(pegel, 0, 255, 0, height-100));
+    val_level = int(map(level, 0, 255, 0, height-150));
+    val_pegel = int(map(pegel, 0, 255, 0, height-150));
+
+    delta_level_pegel = val_level - int_val_pegel;
+
+    if (delta_level_pegel > 0) {
+      fill(0, 255, 0);
+      run = true;
+    } else {
+      fill(255, 0, 0);
+      run = false;
+    }
+    ellipse(x+25, 25, 10, 10);
+
+
+
+    if (cycle < store.length) {
+      store[cycle] = val_pegel;
+    }
+    for (int i = 0; i < store.length; i++) {
+      int_val_pegel += store[i];
+    }
+    int_val_pegel = int_val_pegel / store.length;
+    cycle++;
+    if (cycle == store.length) {
+      cycle = 0;
+    }
+
 
     noStroke();
     rectMode(CORNERS);
@@ -148,7 +179,7 @@ class Levels {
     rect(x, y, x + 50, y - val_level);
 
     fill(0, 100, 255, 100);
-    rect(x, y, x + 50, y - val_pegel);
+    rect(x, y, x + 50, y - int_val_pegel);
 
     fill(255);
     textAlign(CENTER);
@@ -156,6 +187,6 @@ class Levels {
 
     fill(0, 100, 255, 100);
     textAlign(CENTER);
-    text(pegel, x + 25, y - val_pegel - 5);
+    text(pegel, x + 25, y - int_val_pegel - 5);
   }
 }
