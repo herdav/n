@@ -5,21 +5,23 @@ import processing.serial.*;
 import cc.arduino.*;
 
 Serial myPort;
-String portStream_arduino;
+String  portStream_arduino;
+int     posA, posB, posE;
+int     distA, distB;
 boolean firstContact = false;
 
 Server myServer;
 String portStream_crawler;
-int posAA, posAB, posAC, posBA, posBB, posBC, posEnd;
-float data_gas_last_trade, data_gas_52w_heigh, data_gas_52w_low;
-float data_wheat_last_trade, data_wheat_52w_heigh, data_wheat_52w_low;
-int val_data_gas_last_trade, val_data_gas_52w_heigh, val_data_gas_52w_low;
-int val_data_wheat_last_trade, val_data_wheat_52w_heigh, val_data_wheat_52w_low;
-int count_data = 0;
+int    posAA, posAB, posAC, posBA, posBB, posBC, posEE;
+float  data_gas_last_trade, data_gas_52w_heigh, data_gas_52w_low;
+float  data_wheat_last_trade, data_wheat_52w_heigh, data_wheat_52w_low;
+int    val_data_gas_last_trade, val_data_gas_52w_heigh, val_data_gas_52w_low;
+int    val_data_wheat_last_trade, val_data_wheat_52w_heigh, val_data_wheat_52w_low;
+int    count_data = 0;
 
 Levels level_gas, level_wheat;
-int pegel_gas_ref, pegel_wheat_ref;
-int store = 10;
+int    pegel_gas_ref, pegel_wheat_ref;
+int    store = 4;
 
 String time;
 
@@ -48,8 +50,8 @@ void draw() {
 void serialEvent(Serial myPort) {
   portStream_arduino = myPort.readStringUntil('\n');
   if (portStream_arduino != null) {
-    portStream_arduino = trim(portStream_arduino);
-    println(portStream_arduino);
+
+    stream_arduino();
 
     if (firstContact == false) {
       if (portStream_arduino.equals("arduino")) {
@@ -60,15 +62,20 @@ void serialEvent(Serial myPort) {
       }
     } else {
       println(portStream_arduino);
-      if (level_gas.run == true) 
-      {
-        myPort.write('1');
-        println('1');
+      if (level_gas.run == true) {
+        myPort.write(byte('a'));
+        println("Controller: a (high)");
       } else {
-        myPort.write('0');
-        println('0');
+        myPort.write(byte('b'));
+        println("Controller: b (low)");
       }
-      //myPort.write('A');
+      if (level_wheat.run == true) {
+        myPort.write(byte('c'));
+        println("Controller: c (high)");
+      } else {
+        myPort.write(byte('d'));
+        println("Controller: d (low)");
+      }
     }
   }
 }
@@ -82,7 +89,7 @@ void stream_crawler() {
   posBA = portStream_crawler.indexOf("ba");
   posBB = portStream_crawler.indexOf("bb");
   posBC = portStream_crawler.indexOf("bc");
-  posEnd = portStream_crawler.indexOf('#');
+  posEE = portStream_crawler.indexOf('#');
 
   data_gas_last_trade   = (float(portStream_crawler.substring(posAA+2, posAB)))/1000;
   data_gas_52w_heigh    = (float(portStream_crawler.substring(posAB+2, posAC)))/1000;
@@ -90,16 +97,32 @@ void stream_crawler() {
 
   data_wheat_last_trade = (float(portStream_crawler.substring(posBA+2, posBB)))/1000;
   data_wheat_52w_heigh  = (float(portStream_crawler.substring(posBB+2, posBC)))/1000;
-  data_wheat_52w_low    = (float(portStream_crawler.substring(posBC+2, posEnd)))/1000;  
+  data_wheat_52w_low    = (float(portStream_crawler.substring(posBC+2, posEE)))/1000;  
 
   val_data_gas_last_trade = 255 - int(map(data_gas_last_trade, data_gas_52w_low, data_gas_52w_heigh, 0, 255));  
   val_data_wheat_last_trade = int(map(data_wheat_last_trade, data_wheat_52w_low, data_wheat_52w_heigh, 0, 255));
 
-  println("[" + count_data + "] Received data @", time, ">>", portStream_crawler);
-  println("GAS:   ", data_gas_last_trade, "mmGBP/Btu", val_data_gas_last_trade + "/255");
-  println("WHEAT: ", data_wheat_last_trade, "USD/bu", val_data_wheat_last_trade + "/255");
+  //println("[" + count_data + "] Received data @", time, ">>", portStream_crawler);
+  //println("GAS:   ", data_gas_last_trade, "mmGBP/Btu", val_data_gas_last_trade + "/255");
+  //println("WHEAT: ", data_wheat_last_trade, "USD/bu", val_data_wheat_last_trade + "/255");
+  
+  println(portStream_crawler);
 
   count_data++;
+}
+
+void stream_arduino() {
+  portStream_arduino = trim(portStream_arduino);
+
+  if (portStream_arduino.contains("Arduino: ") == true) {
+    posA = portStream_arduino.indexOf("a");
+    posB = portStream_arduino.indexOf("b");
+    posE = portStream_arduino.indexOf("#");
+
+    distA   = int(portStream_arduino.substring(posA+1, posB));
+    distB   = int(portStream_arduino.substring(posB+1, posE));
+  }
+  println(portStream_arduino);
 }
 
 void setup_graphic() {
@@ -108,8 +131,8 @@ void setup_graphic() {
 }
 
 void draw_graphic() {
-  pegel_gas_ref = int(map(float(portStream_arduino), 0, 30, 0, 255));
-  pegel_wheat_ref = pegel_gas_ref;
+  pegel_gas_ref   = int(map(distA, 0, 30, 0, 255));
+  pegel_wheat_ref = int(map(distB, 0, 30, 0, 255));
 
   fill(0);
   level_gas.display(val_data_gas_last_trade, pegel_gas_ref);
@@ -155,8 +178,6 @@ class Levels {
     }
     ellipse(x+25, 25, 10, 10);
 
-
-
     if (cycle < store.length) {
       store[cycle] = val_pegel;
     }
@@ -168,7 +189,6 @@ class Levels {
     if (cycle == store.length) {
       cycle = 0;
     }
-
 
     noStroke();
     rectMode(CORNERS);
