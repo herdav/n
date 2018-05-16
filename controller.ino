@@ -38,7 +38,6 @@ void loop() {
 
   if (Serial.available() > 0) {
     streamINserver = Serial.read();
-    //streamINserver.trim();
     if (streamINserver == byte('a') ) {
       control1 = HIGH;
       digitalWrite(LED1, control1);
@@ -60,7 +59,7 @@ void loop() {
   else {
     streamOUT();
     Serial.println(streamTOserver);
-    Serial.println(streamINserver);
+    //Serial.println(streamINserver);
     delay(50);
   }
 }
