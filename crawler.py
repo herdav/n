@@ -19,6 +19,12 @@ id_wheat_last_trade = ''
 id_wheat_52w_high = ''
 id_wheat_52w_low = ''
 
+url_usd_chf = ''
+id_usd_chf = ''
+
+url_gbp_chf = ''
+id_gbp_chf = ''
+
 count = 0
 
 
@@ -58,11 +64,18 @@ while True:
         wheat_52low_price = crawler(url_wheat, id_wheat_52w_low)
         data_wheat = ('ba' + conv(wheat_current_price) + 'bb' + conv(wheat_52high_price) + 'bc' + conv(wheat_52low_price))
 
-        data = ("Crawler: " + data_gas + data_wheat + '#')
+        usd_chf = crawler(url_usd_chf, id_usd_chf)
+        data_usd_chf = ('ca' + conv(usd_chf))
 
-        print('[' + str(count) + '] Port Stream: ' + data)
-        print('GAS:  ', gas_current_price, gas_52high_price, gas_52low_price, 'mmGBP/Btu')
+        gbp_chf = crawler(url_gbp_chf, id_gbp_chf)
+        data_gbp_chf = ('cb' + conv(gbp_chf))
+
+        data = ("Crawler: " + data_gas + data_wheat + data_usd_chf + data_gbp_chf + '#')
+
+        print('[' + str(count) + '] Port Stream ' + data)
+        print('GAS:  ', gas_current_price, gas_52high_price, gas_52low_price, 'GBP/mmBtu')
         print('WHEAT:', wheat_current_price, wheat_52high_price, wheat_52low_price, 'USD/bu')
+        print('RATE: ', usd_chf, 'USD/CHF', gbp_chf, 'GBP/CHF')
 
         count += 1
 
