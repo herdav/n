@@ -4,7 +4,7 @@ import processing.net.*;
 import processing.serial.*;
 import cc.arduino.*;
 
-Serial myPort;
+Serial  myPort;
 String  portStream_arduino;
 int     posA, posB, posE;
 int     distA, distB;
@@ -12,12 +12,13 @@ boolean firstContact = false;
 
 Server myServer;
 String portStream_crawler;
-int    posAA, posAB, posAC, posBA, posBB, posBC, posEE;
+int    posAA, posAB, posAC, posBA, posBB, posBC, posCA, posCB, posEE;
 float  data_gas_last_trade, data_gas_52w_heigh, data_gas_52w_low;
 float  data_wheat_last_trade, data_wheat_52w_heigh, data_wheat_52w_low;
+float  data_gbp_chf, data_usd_chf;
 int    val_data_gas_last_trade, val_data_gas_52w_heigh, val_data_gas_52w_low;
 int    val_data_wheat_last_trade, val_data_wheat_52w_heigh, val_data_wheat_52w_low;
-int    count_data = 0;
+int    val_data_usd_chf, val_data_gbp_chf;
 
 Levels level_gas, level_wheat;
 int    pegel_gas_ref, pegel_wheat_ref;
@@ -64,17 +65,17 @@ void serialEvent(Serial myPort) {
       println(portStream_arduino);
       if (level_gas.run == true) {
         myPort.write(byte('a'));
-        println("Controller: a (high)");
+        println("Control: a [c1=HIGH]");
       } else {
         myPort.write(byte('b'));
-        println("Controller: b (low)");
+        println("Control: b [c1=LOW]");
       }
       if (level_wheat.run == true) {
         myPort.write(byte('c'));
-        println("Controller: c (high)");
+        println("Control: c [c2=HIGH]");
       } else {
         myPort.write(byte('d'));
-        println("Controller: d (low)");
+        println("Control: d [c2=LOW]");
       }
     }
   }
@@ -89,26 +90,31 @@ void stream_crawler() {
   posBA = portStream_crawler.indexOf("ba");
   posBB = portStream_crawler.indexOf("bb");
   posBC = portStream_crawler.indexOf("bc");
+  posCA = portStream_crawler.indexOf("ca");
+  posCB = portStream_crawler.indexOf("cb");
   posEE = portStream_crawler.indexOf('#');
 
-  data_gas_last_trade   = (float(portStream_crawler.substring(posAA+2, posAB)))/1000;
-  data_gas_52w_heigh    = (float(portStream_crawler.substring(posAB+2, posAC)))/1000;
-  data_gas_52w_low      = (float(portStream_crawler.substring(posAC+2, posBA)))/1000;
+  data_gas_last_trade   = da(portStream_crawler.substring(posAA+2, posAB))*data_gbp_chf;
+  data_gas_52w_heigh    = da(portStream_crawler.substring(posAB+2, posAC))*data_gbp_chf;
+  data_gas_52w_low      = da(portStream_crawler.substring(posAC+2, posBA))*data_gbp_chf;
 
-  data_wheat_last_trade = (float(portStream_crawler.substring(posBA+2, posBB)))/1000;
-  data_wheat_52w_heigh  = (float(portStream_crawler.substring(posBB+2, posBC)))/1000;
-  data_wheat_52w_low    = (float(portStream_crawler.substring(posBC+2, posEE)))/1000;  
+  data_wheat_last_trade = da(portStream_crawler.substring(posBA+2, posBB))*data_usd_chf;
+  data_wheat_52w_heigh  = da(portStream_crawler.substring(posBB+2, posBC))*data_usd_chf;
+  data_wheat_52w_low    = da(portStream_crawler.substring(posBC+2, posCA))*data_usd_chf;
 
-  val_data_gas_last_trade = 255 - int(map(data_gas_last_trade, data_gas_52w_low, data_gas_52w_heigh, 0, 255));  
+  data_gbp_chf          = da(portStream_crawler.substring(posCB+2, posEE));
+  data_usd_chf          = da(portStream_crawler.substring(posCA+2, posCB));
+
+  val_data_gas_last_trade   = 255 - int(map(data_gas_last_trade, data_gas_52w_low, data_gas_52w_heigh, 0, 255));  
   val_data_wheat_last_trade = int(map(data_wheat_last_trade, data_wheat_52w_low, data_wheat_52w_heigh, 0, 255));
 
-  //println("[" + count_data + "] Received data @", time, ">>", portStream_crawler);
-  //println("GAS:   ", data_gas_last_trade, "mmGBP/Btu", val_data_gas_last_trade + "/255");
-  //println("WHEAT: ", data_wheat_last_trade, "USD/bu", val_data_wheat_last_trade + "/255");
-  
   println(portStream_crawler);
+}
 
-  count_data++;
+float da(String data) {
+  float val;
+  val = float(data)/1000;
+  return val;  
 }
 
 void stream_arduino() {
@@ -138,15 +144,17 @@ void draw_graphic() {
   level_gas.display(val_data_gas_last_trade, pegel_gas_ref);
   fill(255);
   textAlign(LEFT);
-  text("GAS: " + data_gas_last_trade + " mmGBP/Btu", level_gas.x, level_gas.y + 25);
-  text(data_gas_52w_heigh + " - " + data_gas_52w_low + " | 0 - 255", level_gas.x, level_gas.y + 40);
+  text("GAS: " + rd(data_gas_last_trade) + " CHF/mmBtu", level_gas.x, level_gas.y + 25);
+  text(rd(data_gas_52w_heigh) + " - " + rd(data_gas_52w_low) + " | 0 - 255", level_gas.x, level_gas.y + 40);
+  text(data_gbp_chf + " CHF/GBP", level_gas.x, level_gas.y + 55);
 
   fill(0);
   level_wheat.display(val_data_wheat_last_trade, pegel_wheat_ref);
   fill(255);
   textAlign(LEFT);
-  text("WHEAT: " + data_wheat_last_trade + " USD/bu", level_wheat.x, level_wheat.y + 25);
-  text(data_wheat_52w_low + " - " + data_wheat_52w_heigh + " | 0 - 255", level_wheat.x, level_wheat.y + 40);
+  text("WHEAT: " + rd(data_wheat_last_trade) + " CHF/bu", level_wheat.x, level_wheat.y + 25);
+  text(rd(data_wheat_52w_low) + " - " + rd(data_wheat_52w_heigh) + " | 0 - 255", level_wheat.x, level_wheat.y + 40);
+  text(data_usd_chf + " CHF/USD", level_wheat.x, level_wheat.y + 55);
 }
 
 class Levels {
@@ -209,4 +217,10 @@ class Levels {
     textAlign(CENTER);
     text(pegel, x + 25, y - int_val_pegel - 5);
   }
+}
+
+float rd(float data) {
+  float val;
+  val = float(int(data*1000))/1000; 
+  return val;
 }
