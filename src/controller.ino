@@ -1,23 +1,33 @@
 // Controller
 
-#define TRIG_A 30
-#define ECHO_A 31
-#define TRIG_B 34
-#define ECHO_B 35
+#define TRIG_A 30               // TANK
+#define ECHO_A 31               // TANK
+#define TRIG_B 34               // GAS
+#define ECHO_B 35               // GAS
+#define TRIG_C 38               // WHEAT
+#define ECHO_C 39               // WHEAT
+#define TRIG_D 42               // PLANT
+#define ECHO_D 43               // PLANT
 
-#define LED1 52
-#define LED2 53
+#define pumpA 5                 // TANK  > GAS
+#define pumpB 6                 // GAS   > WHEAT
+#define pumpC 7                 // WHEAT > PLANT
 
-int     maximumRange = 30;
-int     minimumRange = 5;
+int     pumpPower = 255;        // 0-255 = 0-5V
+
+int     maximumRange = 36;      // upper limit in cm
+int     minimumRange = 6;       // limit of detection in cm
 long    distA, duraA;
 long    distB, duraB;
+long    distC, duraC;
+long    distD, duraD;
 
 int     streamINserver;
 String  streamTOserver;
 
-boolean control1 = LOW;
-boolean control2 = LOW;
+boolean control_pumpA = LOW;
+boolean control_pumpB = LOW;
+boolean control_pumpC = LOW;
 
 void setup()
 {
@@ -25,9 +35,15 @@ void setup()
   pinMode(ECHO_A, INPUT);
   pinMode(TRIG_B, OUTPUT);
   pinMode(ECHO_B, INPUT);
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
-  
+  pinMode(TRIG_C, OUTPUT);
+  pinMode(ECHO_C, INPUT);
+  pinMode(TRIG_D, OUTPUT);
+  pinMode(ECHO_D, INPUT);
+
+  pinMode(pumpA, OUTPUT);
+  pinMode(pumpB, OUTPUT);
+  pinMode(pumpC, OUTPUT);
+
   Serial.begin(9600);
   establishContact();
 }
@@ -35,38 +51,47 @@ void setup()
 void loop() {
   ultrasonicA();
   ultrasonicB();
+  ultrasonicC();
+  ultrasonicD();
 
   if (Serial.available() > 0) {
     streamINserver = Serial.read();
     if (streamINserver == byte('a') ) {
-      control1 = HIGH;
-      digitalWrite(LED1, control1);
+      control_pumpA = HIGH;
+      analogWrite(pumpA, pumpPower);
     }
     if (streamINserver == byte('b')) {
-      control1 = LOW;
-      digitalWrite(LED1, control1);
+      control_pumpA = LOW;
+      analogWrite(pumpA, 0);
     }
     if (streamINserver == byte('c')) {
-      control2 = HIGH;
-      digitalWrite(LED2, control2);
+      control_pumpB = HIGH;
+      analogWrite(pumpB, pumpPower);
     }
     if (streamINserver == byte('d')) {
-      control2 = LOW;
-      digitalWrite(LED2, control2);
+      control_pumpB = LOW;
+      analogWrite(pumpB, 0);
     }
-    delay(100);
+    if (streamINserver == byte('e')) {
+      control_pumpC = HIGH;
+      analogWrite(pumpC, pumpPower);
+    }
+    if (streamINserver == byte('f')) {
+      control_pumpC = LOW;
+      analogWrite(pumpC, 0);
+    }
+    delay(50);
   }
   else {
     streamOUT();
     Serial.println(streamTOserver);
-    //Serial.println(streamINserver);
-    delay(50);
+    delay(100);
   }
 }
 
 void establishContact() {
   while (Serial.available() <= 0) {
-    Serial.println("arduino");
+    Serial.println("!!");
     delay(300);
   }
 }
@@ -81,8 +106,9 @@ void ultrasonicA() {
     distA = maximumRange;
   }
   if (distA <= minimumRange) {
-    distA = 0;
+    distA = minimumRange;
   }
+  delay(50);
 }
 
 void ultrasonicB() {
@@ -95,17 +121,50 @@ void ultrasonicB() {
     distB = maximumRange;
   }
   if (distB <= minimumRange) {
-    distB = 0;
+    distB = minimumRange;
   }
+  delay(50);
+}
+
+void ultrasonicC() {
+  digitalWrite(TRIG_C, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_C, LOW);
+  duraC = pulseIn(ECHO_C, HIGH);
+  distC = duraC / 58.2;
+  if (distC >= maximumRange) {
+    distC = maximumRange;
+  }
+  if (distC <= minimumRange) {
+    distC = minimumRange;
+  }
+  delay(50);
+}
+
+void ultrasonicD() {
+  digitalWrite(TRIG_D, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_D, LOW);
+  duraD = pulseIn(ECHO_D, HIGH);
+  distD = duraD / 58.2;
+  if (distD >= maximumRange) {
+    distD = maximumRange;
+  }
+  if (distD <= minimumRange) {
+    distD = minimumRange;
+  }
+  delay(50);
 }
 
 void streamOUT() {
-  streamTOserver = normalizeData(distA, distB);
+  streamTOserver = normalizeData(distA, distB, distC, distD);
 }
 
-String normalizeData(int a, int b) {
-  String A = String(a);
-  String B = String(b);
-  String ret = String("Arduino: ") + String('a') + A + String('b') + B + String('#');
+String normalizeData(int dataA, int dataB, int dataC, int dataD) {
+  String A = String(dataA);
+  String B = String(dataB);
+  String C = String(dataC);
+  String D = String(dataD);
+  String ret = String("::") + String('a') + A + String('b') + B + String('c') + C + String('d') + D + String('#');
   return ret;
 }
