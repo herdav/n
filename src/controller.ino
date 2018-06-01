@@ -1,5 +1,8 @@
-
-// Controller
+// N/Controller
+// Created 2018 by David Herren
+// https://github.com/herdav/n
+// Licensed under the MIT License.
+// -------------------------------
 
 #define TRIG_A 22               // TANK
 #define ECHO_A 23               // TANK
@@ -10,29 +13,24 @@
 #define TRIG_D 34               // PLANT
 #define ECHO_D 35               // PLANT
 
-#define PUMP_A 5                 // TANK  > GAS
-#define PUMP_B 6                 // GAS   > WHEAT
-#define PUMP_C 7                 // WHEAT > PLANT
+#define PUMP_A 5                // TANK  > GAS
+#define PUMP_B 6                // GAS   > WHEAT
+#define PUMP_C 7                // WHEAT > PLANT
 
 #define LED_automa 52
 #define LED_manual 50
 
 #define TASTER_automa 46
 #define TASTER_manual 44
-#define TASTER_pump_A 42
-#define TASTER_pump_B 40
-#define TASTER_pump_C 38
+#define TASTER_pumpA 42
+#define TASTER_pumpB 40
+#define TASTER_pumpC 38
 
-boolean run_automa = false;
-boolean run_manual = true;
-boolean run_pump_A = false;
-boolean run_pump_B = false;
-boolean run_pump_C = false;
-
-int     pumpPower  = 255;        // 0-255 = 0-5V
-
+int     pumpPower    = 140;     // 0-255 = 0-5V
 int     maximumRange = 36;      // upper limit in cm
-int     minimumRange = 6;       // limit of detection in cm
+int     minimumRange = 10;      // limit of detection in cm
+int     deltaRange   = 3;       // refolow pipe
+
 long    distA, duraA;
 long    distB, duraB;
 long    distC, duraC;
@@ -40,6 +38,12 @@ long    distD, duraD;
 
 int     streamINserver;
 String  streamTOserver;
+
+boolean run_automa    = false;
+boolean run_manual    = true;
+boolean run_pumpA     = false;
+boolean run_pumpB     = false;
+boolean run_pumpC     = false;
 
 boolean control_pumpA = LOW;
 boolean control_pumpB = LOW;
@@ -64,9 +68,9 @@ void setup()
   pinMode(LED_manual, OUTPUT);
   pinMode(TASTER_automa, INPUT);
   pinMode(TASTER_manual, INPUT);
-  pinMode(TASTER_pump_A, INPUT);
-  pinMode(TASTER_pump_B, INPUT);
-  pinMode(TASTER_pump_C, INPUT);
+  pinMode(TASTER_pumpA,  INPUT);
+  pinMode(TASTER_pumpB,  INPUT);
+  pinMode(TASTER_pumpC,  INPUT);
 
   Serial.begin(9600);
   establishContact();
@@ -74,63 +78,60 @@ void setup()
 
 void loop() {
   manual();
+
+  ultrasonicA();
+  ultrasonicB();
+  ultrasonicC();
+  ultrasonicD();
+
   if (run_manual == true) {
-    if (run_pump_A == true) {
+    if (run_pumpA == true) {
       analogWrite(PUMP_A, pumpPower);
     } else {
       analogWrite(PUMP_A, 0);
     }
-    if (run_pump_B == true) {
+    if (run_pumpB == true) {
       analogWrite(PUMP_B, pumpPower);
     } else {
       analogWrite(PUMP_B, 0);
     }
-    if (run_pump_C == true) {
+    if (run_pumpC == true) {
       analogWrite(PUMP_C, pumpPower);
     } else {
       analogWrite(PUMP_C, 0);
     }
   }
-
-  if (run_automa == true) {
-    ultrasonicA();
-    ultrasonicB();
-    ultrasonicC();
-    ultrasonicD();
-    //delay(50);
-    if (Serial.available() > 0) {
-      streamINserver = Serial.read();
-      if (streamINserver == byte('a') ) {
-        control_pumpA = HIGH;
-        analogWrite(PUMP_A, pumpPower);
-      }
-      if (streamINserver == byte('b')) {
-        control_pumpA = LOW;
-        analogWrite(PUMP_A, 0);
-      }
-      if (streamINserver == byte('c')) {
-        control_pumpB = HIGH;
-        analogWrite(PUMP_B, pumpPower);
-      }
-      if (streamINserver == byte('d')) {
-        control_pumpB = LOW;
-        analogWrite(PUMP_B, 0);
-      }
-      if (streamINserver == byte('e')) {
-        control_pumpC = HIGH;
-        analogWrite(PUMP_C, pumpPower);
-      }
-      if (streamINserver == byte('f')) {
-        control_pumpC = LOW;
-        analogWrite(PUMP_C, 0);
-      }
-      delay(50);
-    } else {
-      streamOUT();
-      Serial.println(streamTOserver);
-      delay(100);
+  if (run_automa == true && Serial.available() > 0) {
+    streamINserver = Serial.read();
+    if (streamINserver == byte('a') && distA < maximumRange - deltaRange) {
+      control_pumpA = HIGH;
+      analogWrite(PUMP_A, pumpPower);
     }
+    if (streamINserver == byte('b')) {
+      control_pumpA = LOW;
+      analogWrite(PUMP_A, 0);
+    }
+    if (streamINserver == byte('c') && distB < maximumRange - deltaRange) {
+      control_pumpB = HIGH;
+      analogWrite(PUMP_B, pumpPower);
+    }
+    if (streamINserver == byte('d')) {
+      control_pumpB = LOW;
+      analogWrite(PUMP_B, 0);
+    }
+    if (streamINserver == byte('e') && distC < maximumRange - deltaRange) {
+      control_pumpC = HIGH;
+      analogWrite(PUMP_C, pumpPower);
+    }
+    if (streamINserver == byte('f')) {
+      control_pumpC = LOW;
+      analogWrite(PUMP_C, 0);
+    }
+  } else {
+    streamOUT();
+    Serial.println(streamTOserver);
   }
+  delay(50);
 }
 
 void manual() {
@@ -146,27 +147,27 @@ void manual() {
     run_automa = false;
     digitalWrite(LED_automa, LOW);
   }
-  if (digitalRead(TASTER_pump_A) == HIGH && run_manual == true) {
-    run_pump_A = true;
+  if (digitalRead(TASTER_pumpA) == HIGH && run_manual == true) {
+    run_pumpA = true;
   } else {
-    run_pump_A = false;
+    run_pumpA = false;
   }
-  if (digitalRead(TASTER_pump_B) == HIGH && run_manual == true) {
-    run_pump_B = true;
+  if (digitalRead(TASTER_pumpB) == HIGH && run_manual == true) {
+    run_pumpB = true;
   } else {
-    run_pump_B = false;
+    run_pumpB = false;
   }
-  if (digitalRead(TASTER_pump_C) == HIGH && run_manual == true) {
-    run_pump_C = true;
+  if (digitalRead(TASTER_pumpC) == HIGH && run_manual == true) {
+    run_pumpC = true;
   } else {
-    run_pump_C = false;
+    run_pumpC = false;
   }
 }
 
 void establishContact() {
   while (Serial.available() <= 0) {
     Serial.println("!!");
-    delay(300);
+    delay(200);
   }
 }
 
@@ -182,7 +183,6 @@ void ultrasonicA() {
   if (distA <= minimumRange) {
     distA = minimumRange;
   }
-  //delay(delay_us);
 }
 
 void ultrasonicB() {
@@ -197,7 +197,6 @@ void ultrasonicB() {
   if (distB <= minimumRange) {
     distB = minimumRange;
   }
-  //delay(delay_us);
 }
 
 void ultrasonicC() {
@@ -212,7 +211,6 @@ void ultrasonicC() {
   if (distC <= minimumRange) {
     distC = minimumRange;
   }
-  //delay(delay_us);
 }
 
 void ultrasonicD() {
@@ -227,7 +225,6 @@ void ultrasonicD() {
   if (distD <= minimumRange) {
     distD = minimumRange;
   }
-  //delay(delay_us);
 }
 
 void streamOUT() {
