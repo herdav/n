@@ -1,4 +1,8 @@
-// Server
+// N/Server
+// Created 2018 by David Herren
+// https://github.com/herdav/n
+// Licensed under the MIT License.
+// -------------------------------
 
 import  processing.net.*;
 import  processing.serial.*;
@@ -7,7 +11,12 @@ import  cc.arduino.*;
 Serial  myPort;
 String  portStream_arduino;
 int     posA, posB, posC, posD, posEnd;
-int     distA, distB, distC, distD;
+int     maxDist = 36;
+int     minDist = 10;
+int     distA = maxDist;
+int     distB = maxDist;
+int     distC = maxDist;
+int     distD = maxDist;
 boolean firstContact = false;
 
 Server  myServer;
@@ -22,12 +31,13 @@ int     val_data_usd_chf, val_data_gbp_chf;
 
 Levels  level_tank, level_gas, level_wheat, level_plant;
 int     pegel_tank_ref, pegel_gas_ref, pegel_wheat_ref, pegel_plant_ref;
-int     store = 1;
+int     store = 6;
+int     tank_set = 25;
 
 String  time;
 
 void setup() {
-  size(1000, 600);
+  size(900, 600);
   myServer = new Server(this, 5204);
   myPort = new Serial(this, Arduino.list()[0], 9600);
   myPort.bufferUntil('\n');
@@ -51,9 +61,7 @@ void draw() {
 void serialEvent(Serial myPort) {
   portStream_arduino = myPort.readStringUntil('\n');
   if (portStream_arduino != null) {
-
     stream_arduino();
-
     if (firstContact == false) {
       if (portStream_arduino.equals("!!")) {
         myPort.clear();
@@ -65,24 +73,24 @@ void serialEvent(Serial myPort) {
       println(portStream_arduino);
       if (level_gas.run == true) {
         myPort.write(byte('a'));
-        println("Control: a [c1=HIGH]");
+        println("Control: pumpA RUN! [a]");
       } else {
         myPort.write(byte('b'));
-        println("Control: b [c1=LOW]");
+        println("Control: pumpA STOP [b]");
       }
       if (level_wheat.run == true) {
         myPort.write(byte('c'));
-        println("Control: c [c2=HIGH]");
+        println("Control: pumpB RUN! [c]");
       } else {
         myPort.write(byte('d'));
-        println("Control: d [c2=LOW]");
+        println("Control: pumpB STOP [d]");
       }
       if (level_plant.run == true) {
         myPort.write(byte('e'));
-        println("Control: e [c3=HIGH]");
+        println("Control: pumpC RUN! [e]");
       } else {
         myPort.write(byte('f'));
-        println("Control: f [c3=LOW]");
+        println("Control: pumpC STOP [f]");
       }
     }
   }
@@ -129,8 +137,8 @@ void stream_crawler() {
   data_gbp_chf          = da(portStream_crawler.substring(posCB+2, posEE));
   data_usd_chf          = da(portStream_crawler.substring(posCA+2, posCB));
 
-  val_data_gas_last_trade   = 255 - int(map(data_gas_last_trade, data_gas_52w_low, data_gas_52w_heigh, 0, 255));  
-  val_data_wheat_last_trade = int(map(data_wheat_last_trade, data_wheat_52w_low, data_wheat_52w_heigh, 0, 255));
+  val_data_gas_last_trade   = 200 - int(map(data_gas_last_trade, data_gas_52w_low, data_gas_52w_heigh, 0, 200));  
+  val_data_wheat_last_trade = int(map(data_wheat_last_trade, data_wheat_52w_low, data_wheat_52w_heigh, 0, 200));
 
   println(portStream_crawler);
 }
@@ -142,45 +150,51 @@ float da(String data) {
 }
 
 void setup_control() {
-  level_tank  = new Levels(100, height-100);
-  level_gas   = new Levels(300, height-100);
-  level_wheat = new Levels(500, height-100);
-  level_plant = new Levels(700, height-100);
+  int posX = (width-150) / 7;
+  
+  level_tank  = new Levels(posX,   height-100);
+  level_gas   = new Levels(posX*3, height-100);
+  level_wheat = new Levels(posX*5, height-100);
+  level_plant = new Levels(posX*7, height-100);
 }
 
 void control() {
-  pegel_tank_ref  = int(map(distA, 36, 6, 0, 255));
-  pegel_gas_ref   = int(map(distB, 36, 6, 0, 255));
-  pegel_wheat_ref = int(map(distC, 36, 6, 0, 255));
-  pegel_plant_ref = int(map(distD, 36, 6, 0, 255));
+  pegel_tank_ref  = int(map(distA, maxDist, minDist, 0, 255));
+  pegel_gas_ref   = int(map(distB, maxDist, minDist, 0, 255));
+  pegel_wheat_ref = int(map(distC, maxDist, minDist, 0, 255));
+  pegel_plant_ref = int(map(distD, maxDist, minDist, 0, 255));
+  
+  int txtY = 35;
 
   fill(0);
-  level_tank.display(125, pegel_tank_ref);
+  level_tank.display(127, pegel_tank_ref);
   fill(255);
   textAlign(LEFT);
-  text("TANK", level_tank.x, level_tank.y + 25);
+  text("TANK", level_tank.x, level_tank.y + txtY);
 
   fill(0);
   level_gas.display(val_data_gas_last_trade, pegel_gas_ref);
   fill(255);
   textAlign(LEFT);
-  text("GAS: " + rd(data_gas_last_trade) + " CHF/mmBtu", level_gas.x, level_gas.y + 25);
-  text(rd(data_gas_52w_heigh) + " - " + rd(data_gas_52w_low) + " | 0 - 255", level_gas.x, level_gas.y + 40);
-  text(data_gbp_chf + " CHF/GBP", level_gas.x, level_gas.y + 55);
+  text("GAS: " + rd(data_gas_last_trade) + " CHF/mmBtu", level_gas.x, level_gas.y + txtY);
+  fill(150);
+  text(rd(data_gas_52w_heigh) + " - " + rd(data_gas_52w_low) + " (52w)", level_gas.x, level_gas.y + txtY + 15);
+  text(data_gbp_chf + " CHF/GBP", level_gas.x, level_gas.y + txtY + 30);
 
   fill(0);
   level_wheat.display(val_data_wheat_last_trade, pegel_wheat_ref);
   fill(255);
   textAlign(LEFT);
-  text("WHEAT: " + rd(data_wheat_last_trade) + " CHF/bu", level_wheat.x, level_wheat.y + 25);
-  text(rd(data_wheat_52w_low) + " - " + rd(data_wheat_52w_heigh) + " | 0 - 255", level_wheat.x, level_wheat.y + 40);
-  text(data_usd_chf + " CHF/USD", level_wheat.x, level_wheat.y + 55);
+  text("WHEAT: " + rd(data_wheat_last_trade) + " CHF/bu", level_wheat.x, level_wheat.y + txtY);
+  fill(150);
+  text(rd(data_wheat_52w_low) + " - " + rd(data_wheat_52w_heigh) + " (52w)", level_wheat.x, level_wheat.y + txtY + 15);
+  text(data_usd_chf + " CHF/USD", level_wheat.x, level_wheat.y + txtY + 30);
 
   fill(0);
-  level_plant.display(25, pegel_plant_ref);
+  level_plant.display(tank_set, pegel_plant_ref);
   fill(255);
   textAlign(LEFT);
-  text("PLANT", level_plant.x, level_plant.y + 25);
+  text("PLANT", level_plant.x, level_plant.y + txtY);
 }
 
 class Levels {
