@@ -1,4 +1,8 @@
-# CRAWLER
+# N/Crawler
+# Created 2018 by David Herren
+# https://github.com/herdav/n
+# Licensed under the MIT License.
+# -------------------------------
 
 from urllib.request import urlopen
 from datetime import datetime as dt
@@ -26,6 +30,7 @@ url_gbp_chf = ''
 id_gbp_chf = ''
 
 count = 0
+first_data: int = 0
 
 
 def crawler(url, id_value):
@@ -53,7 +58,9 @@ def conv(float_value):
 
 while True:
     dt.now()
-    if dt.now().second % 10 == 0:
+    if dt.now().minute % 10 == 0 and dt.now().second % 59 == 0 or first_data < 2:
+        if first_data <= 2:
+            first_data = first_data + 1
         gas_current_price = crawler(url_gas, id_gas_last_trade)
         gas_52high_price = crawler(url_gas, id_gas_52w_high)
         gas_52low_price = crawler(url_gas, id_gas_52w_low)
