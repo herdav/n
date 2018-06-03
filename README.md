@@ -22,4 +22,4 @@ If we are now striving to become independent of fossil fuels, this also means th
 
 ### Charts
 
-![capture](https://github.com/herdav/n/blob/master/doc/chart-gas-wheat.svg)
+![capture](https://github.com/herdav/n/blob/master/doc/chart-gas-wheat.jpg)
