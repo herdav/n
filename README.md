@@ -11,19 +11,16 @@ If we are now striving to become independent of fossil fuels, this also means th
 
 - [@Vimeo](https://vimeo.com/272964585)
 
-### Exhibition view
 
+### Exhibition view
 ![capture](https://github.com/herdav/n/blob/master/doc/n-installation.jpg)
 
 
 ### Technical drawing
-
 ![capture](https://github.com/herdav/n/blob/master/doc/drawing.png)
 
 ### Visualized control system
-
 ![capture](https://github.com/herdav/n/blob/master/doc/server.jpg)
 
 ### Charts
-
 ![capture](https://github.com/herdav/n/blob/master/doc/chart-gas-wheat.jpg)
