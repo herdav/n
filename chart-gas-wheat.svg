@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 907.1 566.9" style="enable-background:new 0 0 907.1 566.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F5F5F5;}
+	.st1{fill:none;stroke:#646464;}
+	.st2{fill:none;stroke:#C0D0E0;}
+	.st3{clip-path:url(#SVGID_2_);}
+	.st4{fill:none;stroke:#FF0000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st5{clip-path:url(#SVGID_4_);}
+	.st6{clip-path:url(#SVGID_6_);}
+	.st7{clip-path:url(#SVGID_8_);}
+	.st8{clip-path:url(#SVGID_10_);}
+	.st9{clip-path:url(#SVGID_12_);}
+	.st10{font-family:'Arial-BoldMT';}
+	.st11{font-size:16px;}
+	.st12{fill:none;stroke:#FF0000;stroke-width:2;}
+	.st13{font-family:'ArialMT';}
+	.st14{font-size:11px;}
+	.st15{font-size:10px;}
+	.st16{display:none;}
+	.st17{display:inline;fill:#606060;}
+	.st18{display:none;fill:#FFFFFF;fill-opacity:0.9;}
+	.st19{display:none;fill:#EFF1F3;}
+	.st20{fill:#F7F7F7;}
+	.st21{fill:#E7F0F9;}
+	.st22{display:inline;fill:none;stroke:#D8D8D8;}
+	.st23{display:inline;fill:none;stroke:#EEEEEE;}
+	.st24{display:inline;fill:none;stroke:#C0D0E0;}
+	.st25{clip-path:url(#SVGID_14_);}
+	.st26{fill:none;stroke:#00FF00;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st27{clip-path:url(#SVGID_16_);}
+	.st28{clip-path:url(#SVGID_18_);}
+	.st29{clip-path:url(#SVGID_20_);}
+	.st30{clip-path:url(#SVGID_22_);}
+	.st31{clip-path:url(#SVGID_24_);}
+	.st32{display:inline;fill:#80B3EC;fill-opacity:0.3;}
+	.st33{display:inline;fill:none;stroke:#B2B1B6;}
+	.st34{fill:none;stroke:#00FF00;stroke-width:2;}
+	.st35{display:inline;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:5.000000e-02;}
+	.st36{display:inline;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1;}
+	.st37{display:inline;fill:none;stroke:#000000;stroke-opacity:0.15;}
+	.st38{display:inline;fill:#F9F9F9;fill-opacity:0.85;}
+	.st39{fill:#EFF1F3;}
+	.st40{display:inline;}
+	.st41{clip-path:url(#SVGID_26_);}
+	.st42{fill:none;stroke:#DA001A;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st43{clip-path:url(#SVGID_28_);}
+	.st44{clip-path:url(#SVGID_30_);}
+	.st45{clip-path:url(#SVGID_32_);}
+	.st46{clip-path:url(#SVGID_34_);}
+	.st47{clip-path:url(#SVGID_36_);}
+	.st48{clip-path:url(#SVGID_39_);}
+	.st49{clip-path:url(#SVGID_40_);}
+	.st50{fill:url(#SVGID_41_);}
+	.st51{fill:none;stroke:#004390;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.7;}
+	.st52{fill:none;stroke:#DA001A;stroke-width:2;}
+</style>
+<g id="gas">
+	<desc>Created with Highstock 2.1.10</desc>
+	<g>
+		<path class="st0" d="M16,500.2h864v-28H16"/>
+		<path class="st0" d="M16,444.2h864v-28H16"/>
+		<path class="st0" d="M16,388.2h864v-28H16"/>
+		<path class="st0" d="M16,332.2h864v-28H16"/>
+		<path class="st0" d="M16,277.2h864v-28H16"/>
+		<path class="st0" d="M16,221.2h864v-28H16"/>
+		<path class="st0" d="M16,165.2h864v-28H16"/>
+		<path class="st0" d="M16,109.2h864v-28H16"/>
+	</g>
+	<g>
+		<path class="st1" d="M15.5,81.2v419 M15.5,81.2v419"/>
+		<path class="st1" d="M98.5,81.2v419 M98.5,81.2v419"/>
+		<path class="st1" d="M180.5,81.2v419 M180.5,81.2v419"/>
+		<path class="st1" d="M263.5,81.2v419 M263.5,81.2v419"/>
+		<path class="st1" d="M346.5,81.2v419 M346.5,81.2v419"/>
+		<path class="st1" d="M429.5,81.2v419 M429.5,81.2v419"/>
+		<path class="st1" d="M511.5,81.2v419 M511.5,81.2v419"/>
+		<path class="st1" d="M594.5,81.2v419 M594.5,81.2v419"/>
+		<path class="st1" d="M677.5,81.2v419 M677.5,81.2v419"/>
+		<path class="st1" d="M759.5,81.2v419 M759.5,81.2v419"/>
+		<path class="st1" d="M842.5,81.2v419 M842.5,81.2v419"/>
+	</g>
+	<g>
+		<path class="st2" d="M880,509.2"/>
+		<path class="st2" d="M16,509.2"/>
+	</g>
+	<g>
+		<g>
+			<defs>
+				<polyline id="SVGID_1_" points="16,508.7 16,78.7 880,78.7 880,508.7 				"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st3">
+				<path class="st4" d="M-44,140.2l1.7-8.6l1.7-15.3l1.7,10l1.7,3.1l1.7-21.2l1.7,10l1.7,27.3l1.7,5.9l1.7,23.7l1.7,11.2l1.7,26.8
+					l1.7-39.3l1.7-108.2l1.7,0.8l1.7,7.8l1.7,11.7l1.7,12.5l1.7-61.3l1.7,46.8l1.7,49.1l1.7-41l1.7-12.8l1.7,37.4l1.7,46l1.7,0.8H-1
+					l1.7,35.4l1.7-25.4l1.7-3.9l1.7,1.1L7.3,196l1.7-7l1.7-22.3l1.7,4.2l1.7-13.9l1.7,21.5l1.7,81.7l1.7,28.7l1.7,18.1l1.7,14.8
+					l1.7,15.1l1.7-15.3l1.7,7.8l1.7-1.7l1.7,10.9l1.7,11.7l1.7-6.4l1.7,5l1.7-3.6l1.7,1.4l1.7,6.8l1.7,3.7l1.7-0.8l1.7,1.4l1.7,1.4
+					l1.7,5l1.7-3.6l1.7,26.5l1.7,5l1.7-12.3l1.7,0.6l1.7-10l1.7,3.3l1.7,11.2l1.7,17.6l1.7-22l1.7-10.3l1.7,1.1l1.7-7.5l1.7-36
+					l1.7-7.3l1.7-1.6l1.7,2.8l1.7-30.1l1.7,29.3l1.7,18.1l1.7,6.6l1.7,1.3l1.7-7.8l1.7-7.2L90,320l1.7-2.2l1.7-1.9l1.7-12.7
+					l1.7,19.5l1.7-12.1l1.7-22.4l1.7,10.9l1.7,13.7l1.7,9.2l1.7,7.1l1.7,10.2l1.7-0.3l1.7,5.7l1.7-13.8l1.7,9.8l1.7-9.5l1.7,1.1
+					l1.7,1.4l1.7-14.4l1.7-41.4l1.7,11.4l1.7-5.3l1.7,15.9l1.7-19.5l1.7-4.2l1.7-23.1l1.7,16.7l1.7-32.3l1.7-10.2l1.7,25.8l1.7,13.9
+					l1.7,8.9l1.7,3.9l1.7,2.8l1.7,7.8l1.7,5.6l1.7-27.9l1.7,0.8h1.7l1.7-12.5l1.7-12.7l1.7-0.1l1.7-5l1.7,1.1l1.7,0.8l1.7,0.3
+					l1.7,1.7l1.7-14.5l1.7-18.4l1.7-38.5l1.7,1.7l1.7-2.2l1.7,7.2l1.7-14.2l1.7,27.6l1.7,3.9l1.7,2.2l1.7,7.6l1.7-5.4l1.7,6.1
+					l1.7,6.7l1.7-14l1.7-10l1.7-18.5l1.7-9.9l1.7-1.7l1.7-11.2l1.7,15.2l1.7,9.2l1.7,13.5l1.7-3.8l1.7,11.2l1.7-6l1.7-5l1.7-5.6
+					l1.7,2.8l1.7,0.5l1.7,2l1.7,8.9l1.7,1.7l1.7-1.7l1.7,8.1l1.7,1.4l1.7,13.9l1.7,9.5l1.7-6.1l1.7-4.7l1.7-24.3l1.7-45.2l1.7-5
+					l1.7,21.5l1.7,5.6l1.7-32.9l1.7,12.8l1.7-3.9l1.7,7.5l1.7-23.4l1.7,13.7l1.7,15.1l1.7,7.5l1.7,5l1.7,12l1.7-9.2L262,189l1.7,3.3
+					l1.7,11.7l1.7,4.5l1.7-8.1l1.7,3.6l1.7-20.6l1.7-9.2l1.7,3.6l1.7,10l1.7-20.1l1.7,12.3l1.7-9.8l1.7-1.1l1.7,9.5l1.7-17.3
+					l1.7,17.8l1.7-10.3l1.7,9.5l1.7,3.3l1.7-0.3l1.7,9.8l1.7,15.9l1.7,2.5l1.7-9.5l1.7-1.1l1.7,2l1.7,0.6l1.7-8.4l1.7-5.3l1.7,10.8
+					l1.7,5.4l1.7,1.1l1.7-3l1.7-13.1l1.7,0.6l1.7-5.4l1.7-8.9l1.7-6.6l1.7-4.3l1.7,5.7l1.7-10.9l1.7-12l1.7,2.9l1.7-21l1.7-1.9
+					l1.7,10.8l1.7-1.4l1.7-8.9l1.7-4.2l1.7,3.1l1.7-7.8l1.7,10.6l1.7,5.9l1.7,12.5L353,131l1.7-4.2l1.7,3.3l1.7-0.8l1.7,4.4l1.7,2.8
+					l1.7-1.7l1.7-4.7l1.7-1.1l1.7-7.5l1.7,4.3l1.7-18.2l1.7,16.7l1.7-0.3l1.7-2l1.7,9.4l1.7,11.8l1.7,2.8l1.7,4.7l1.7-7.8l1.7-5.4
+					l1.7,4l1.7,10.6l1.7-8.9l1.7,7.8l1.7-9.2l1.7-3.6l1.7,0.9l1.7-0.7l1.7-4.7l1.7,6.7h1.7l1.7,6.2l1.7,2.2l1.7-7.5l1.7-8.3l1.7,1.8
+					l1.7-0.2l1.7,3.4l1.7-15.3l1.7-7l1.7,2.5l1.7,0.8l1.7-6.4l1.7-1.1l1.7-12.3l1.7,13.9l1.7-8.4l1.7-0.6l1.7,6.1l1.7,0.8l1.7,0.6
+					L439,125l1.7,3.5l1.7,7.1l1.7-2.3l1.7,29.6h1.7L449,177l1.7,3.6l1.7,10.6l1.7-16.2l1.7,0.3l1.7,17.8l1.7,18.1l1.7,21.3l1.7-20.5
+					l1.7,10.9l1.7,7l1.7,10.6l1.7,5.3l1.7,10.4l1.7-0.9l1.7,2.2l1.7,25.7l1.7-13.4l1.7,10.9l1.7,5l1.7,13.7l1.7,6.7l1.7-14.7
+					L487,270l1.7,8.5l1.7-5.1l1.7-18l1.7,13.7l1.7-51.6l1.7,3.6l1.7,4.2l1.7-7.8l1.7,7.8l1.7-29.5l1.7,2l1.7,4.7l1.7,4.3l1.7-4.7
+					l1.7-5.3l1.7,7.2l1.7-13.7l1.7-11.4l1.7,16l1.7,5.4l1.7,4.1l1.7-1.8l1.7,33.2l1.7,12.3l1.7,0.8l1.7,6.1l1.7-5l1.7-12.1l1.7-32.2
+					l1.7,23.4l1.7-3.9l1.7,23.4l1.7-5l1.7,3.3l1.7-11.7l1.7,5.7l1.7,5.7l1.7,9.8l1.7,0.3l1.7,15.9l1.7-3.3l1.7-2.1l1.7,6l1.7-4.1
+					l1.7-3.7l1.7,2l1.7-0.6l1.7,1.1l1.7-4.6l1.7-4.7l1.7,5.8l1.7,4.8l1.7-0.7l1.7,8.9l1.7,3.9l1.7,6l1.7-11.5l1.7-3.1l1.7,0.6
+					l1.7,4.4l1.7-0.8l1.7-2l1.7-5.5l1.7,9.5l1.7,2.9l1.7,2.5l1.7,0.9l1.7,13h1.7l1.7-4.2l1.7-4.7l1.7,15.2l1.7,9.8l1.7,8.9l1.7-4.3
+					l1.7-3.1l1.7,12.9l1.7,1.4l1.7,0.9l1.7,12.4l1.7,0.9l1.7-3.3l1.7-3.5l1.7,10.6l1.7-2.2l1.7-2.6l1.7-2.1l1.7,9.3l1.7,4.9l1.7,0.3
+					l1.7-19.9l1.7,10.9l1.7-6.3l1.7,1.4l1.7-1.3l1.7-12.3l1.7-7.2l1.7,0.6l1.7-8.9l1.7-1.4l1.7-2.7l1.7,0.7l1.7,8.6l1.7-15.1
+					l1.7-3.3l1.7,14.8l1.7,13.3l1.7,19.2l1.7-8l1.7-15.4l1.7,11.7l1.7-14.2l1.7-22.6l1.7-21.8l1.7-22.5l1.7-3.7l1.7-8.4l1.7-7.1
+					l1.7-17.5l1.7,8.1l1.7,4.7l1.7,11l1.7,3.8l1.7,17.6l1.7-17.3l1.7-14.5l1.7-33.5l1.7,28.2l1.7-27l1.7-5.5l1.7,23l1.7-45.7
+					l1.7,43.8l1.7,19.3l1.7,18.1l1.7,9.5l1.7,7l1.7,5.2l1.7,14.9l1.7-4.5l1.7,2.2l1.7,2l1.7-5.2l1.7,8.1l1.7,5.2l1.7,7.5l1.7-3.3
+					l1.7-0.8l1.7-0.3l1.7,0.2l1.7,11.5l1.7-6.4l1.7-3.6l1.7,2.8l1.7,12.9l1.7-16.2l1.7-10.7l1.7-8.4l1.7-18.2l1.7-4l1.7-2.1l1.7-1.4
+					l1.7-4.6l1.7,1.1l1.7,8.3l1.7-21l1.7-16.2l1.7,5.2l1.7,3l1.7,5.3l1.7-16.7l1.7-23.5l1.7,14l1.7-25.7l1.7-4.6l1.7,0.1l1.7-17.7
+					l1.7,24l1.7,7l1.7,16.6l1.7-18.1l1.7,31.8l1.7,7.2l1.7-5.3l1.7-0.2l1.7-8.6l1.7-29.9l1.7,47l1.7-16.8l1.7,7.2l1.7,7.8l1.7,7
+					l1.7,2.4l1.7-17.2l1.7-7.2l1.7-6.4l1.7,1.7l1.7-10.3l1.7-7.9l1.7,3.7l1.7-1.6"/>
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)">
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_3_" points="16,508.7 16,78.7 880,78.7 880,508.7 				"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st5">
+				<path d="M-44-0.3"/>
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)">
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_5_" points="16,508.7 16,78.7 880,78.7 880,508.7 				"/>
+			</defs>
+			<clipPath id="SVGID_6_">
+				<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st6">
+				<path d="M-44-0.3"/>
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)">
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_7_" points="16,508.7 16,78.7 880,78.7 880,508.7 				"/>
+			</defs>
+			<clipPath id="SVGID_8_">
+				<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st7">
+			</g>
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_9_" points="16,508.7 16,78.7 880,78.7 880,508.7 				"/>
+			</defs>
+			<clipPath id="SVGID_10_">
+				<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st8">
+			</g>
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_11_" points="16,508.7 16,78.7 880,78.7 880,508.7 				"/>
+			</defs>
+			<clipPath id="SVGID_12_">
+				<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st9">
+			</g>
+		</g>
+		<g transform="translate(74,531) scale(1 1)">
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 307.6429 19.727)" class="st10 st11">Gas natural (Commodities Erdoel/gas)</text>
+	<g transform="translate(40,13)">
+		<g>
+			<g>
+				<g transform="translate(8,3)">
+					<path class="st12" d="M-21,18.7h10"/>
+					<text transform="matrix(1 0 0 1 -5.9938 21.727)" class="st13 st14">Natural gas</text>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 71.5688 526.7271)" class="st13 st15">11 Mai 2009</text>
+		<text transform="matrix(1 0 0 1 154.4606 526.7271)" class="st13 st15">26 Apr 2010</text>
+		<text transform="matrix(1 0 0 1 237.9139 526.7271)" class="st13 st15">11 Apr 2011</text>
+		<text transform="matrix(1 0 0 1 318.7768 526.7271)" class="st13 st15">26 Mär 2012</text>
+		<text transform="matrix(1 0 0 1 401.859 526.7271)" class="st13 st15">11 Mär 2013</text>
+		<text transform="matrix(1 0 0 1 484.1941 526.7271)" class="st13 st15">24 Feb 2014</text>
+		<text transform="matrix(1 0 0 1 569.6859 526.7271)" class="st13 st15">9 Feb 2015</text>
+		<text transform="matrix(1 0 0 1 650.1705 526.7271)" class="st13 st15">25 Jan 2016</text>
+		<text transform="matrix(1 0 0 1 735.6624 526.7271)" class="st13 st15">9 Jan 2017</text>
+		<text transform="matrix(1 0 0 1 814.7626 526.7271)" class="st13 st15">25 Dez 2017</text>
+	</g>
+	<g class="st16">
+		<text transform="matrix(1 0 0 1 -13.4567 502.7271)" class="st17 st13 st15">0.15</text>
+		<text transform="matrix(1 0 0 1 -7.8952 474.7271)" class="st17 st13 st15">0.2</text>
+		<text transform="matrix(1 0 0 1 -13.4567 446.7271)" class="st17 st13 st15">0.25</text>
+		<text transform="matrix(1 0 0 1 -7.8952 419.7271)" class="st17 st13 st15">0.3</text>
+		<text transform="matrix(1 0 0 1 -13.4567 391.7271)" class="st17 st13 st15">0.35</text>
+		<text transform="matrix(1 0 0 1 -7.8952 363.7271)" class="st17 st13 st15">0.4</text>
+		<text transform="matrix(1 0 0 1 -13.4567 335.7271)" class="st17 st13 st15">0.45</text>
+		<text transform="matrix(1 0 0 1 -7.8952 307.7271)" class="st17 st13 st15">0.5</text>
+		<text transform="matrix(1 0 0 1 -13.4567 279.7271)" class="st17 st13 st15">0.55</text>
+		<text transform="matrix(1 0 0 1 -7.8952 251.7271)" class="st17 st13 st15">0.6</text>
+		<text transform="matrix(1 0 0 1 -13.4567 223.7271)" class="st17 st13 st15">0.65</text>
+		<text transform="matrix(1 0 0 1 -7.8952 195.7271)" class="st17 st13 st15">0.7</text>
+		<text transform="matrix(1 0 0 1 -13.4567 168.7271)" class="st17 st13 st15">0.75</text>
+		<text transform="matrix(1 0 0 1 -7.8952 140.727)" class="st17 st13 st15">0.8</text>
+		<text transform="matrix(1 0 0 1 -13.4567 112.727)" class="st17 st13 st15">0.85</text>
+		<text transform="matrix(1 0 0 1 -7.8952 84.727)" class="st17 st13 st15">0.9</text>
+	</g>
+	<g class="st16">
+		<text transform="matrix(1 0 0 1 895.0062 495.7271)" class="st17 st13 st15">25 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 477.7271)" class="st17 st13 st15">30 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 458.7271)" class="st17 st13 st15">35 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 440.7271)" class="st17 st13 st15">40 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 422.7271)" class="st17 st13 st15">45 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 404.7271)" class="st17 st13 st15">50 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 386.7271)" class="st17 st13 st15">55 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 367.7271)" class="st17 st13 st15">60 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 349.7271)" class="st17 st13 st15">65 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 331.7271)" class="st17 st13 st15">70 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 313.7271)" class="st17 st13 st15">75 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 295.7271)" class="st17 st13 st15">80 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 277.7271)" class="st17 st13 st15">85 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 258.7271)" class="st17 st13 st15">90 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 240.7271)" class="st17 st13 st15">95 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 222.7271)" class="st17 st13 st15">100 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 204.7271)" class="st17 st13 st15">105 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 186.7271)" class="st17 st13 st15">110 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 167.7271)" class="st17 st13 st15">115 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 149.7271)" class="st17 st13 st15">120 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 131.727)" class="st17 st13 st15">125 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 113.727)" class="st17 st13 st15">130 %</text>
+		<text transform="matrix(1 0 0 1 895.0062 95.727)" class="st17 st13 st15">135 %</text>
+	</g>
+</g>
+<g id="wheat">
+	<desc>Created with Highstock 2.1.10</desc>
+	<rect x="16" y="79" class="st18" width="864" height="430"/>
+	<path class="st19" d="M16,488.5h864v-32H16"/>
+	<path class="st19" d="M16,423.5h864v-32H16"/>
+	<path class="st19" d="M16,359.5h864v-33H16"/>
+	<path class="st19" d="M16,294.5h864v-32H16"/>
+	<path class="st19" d="M16,229.5h864v-32H16"/>
+	<path class="st19" d="M16,165.5h864v-33H16"/>
+	<path class="st19" d="M16,100.5h864v-21H16"/>
+	<g transform="translate(0,54)">
+		<g transform="translate(145,0)">
+			<line class="st20" x1="10" y1="22" x2="-44" y2="22"/>
+		</g>
+		<g transform="translate(202,0)">
+			<line class="st20" x1="10" y1="22" x2="-44" y2="22"/>
+		</g>
+		<g transform="translate(259,0)">
+			<line class="st20" x1="10" y1="22" x2="-44" y2="22"/>
+		</g>
+		<g transform="translate(316,0)">
+			<line class="st20" x1="10" y1="22" x2="-44" y2="22"/>
+		</g>
+		<g transform="translate(373,0)">
+			<line class="st20" x1="10" y1="22" x2="-44" y2="22"/>
+		</g>
+		<g transform="translate(430,0)">
+			<line class="st20" x1="10" y1="22" x2="-44" y2="22"/>
+		</g>
+		<g transform="translate(487,0)">
+			<line class="st21" x1="10" y1="22" x2="-44" y2="22"/>
+		</g>
+	</g>
+	<g class="st16">
+		<path class="st22" d="M15.5,79v422 M15.5,79v422"/>
+		<path class="st22" d="M98.5,79v422 M98.5,79v422"/>
+		<path class="st22" d="M181.5,79v422 M181.5,79v422"/>
+		<path class="st22" d="M263.5,79v422 M263.5,79v422"/>
+		<path class="st22" d="M346.5,79v422 M346.5,79v422"/>
+		<path class="st22" d="M429.5,79v422 M429.5,79v422"/>
+		<path class="st22" d="M512.5,79v422 M512.5,79v422"/>
+		<path class="st22" d="M594.5,79v422 M594.5,79v422"/>
+		<path class="st22" d="M677.5,79v422 M677.5,79v422"/>
+		<path class="st22" d="M760.5,79v422 M760.5,79v422"/>
+		<path class="st22" d="M843.5,79v422 M843.5,79v422"/>
+	</g>
+	<g class="st16">
+		<path class="st23" d="M189.5,531"/>
+		<path class="st23" d="M349.5,531"/>
+		<path class="st23" d="M509.5,531"/>
+		<path class="st23" d="M670.5,531"/>
+		<path class="st23" d="M830.5,531"/>
+	</g>
+	<g class="st16">
+		<path class="st24" d="M16,509.5h864"/>
+	</g>
+	<g>
+		<g>
+			<defs>
+				<polyline id="SVGID_13_" points="16,509 16,79 880,79 880,509 				"/>
+			</defs>
+			<clipPath id="SVGID_14_">
+				<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st25">
+				<path class="st26" d="M-44,144l1.7-16.3l1.7-63.4l1.7,1.3l1.7-11.3l1.7,19.4l1.7,32.2l1.7-9.2l1.7,33.6l1.7-1.3l1.7,11.3
+					l1.7-55.3l1.7-14.7l1.7,44.9l1.7,29.4l1.7,38.3l1.7-18.4l1.7-1.6l1.7,65l1.7,16.8l1.7,31.8l1.7,22l1.7-11.2l1.7,0.3l1.7,1.6
+					l1.7,9.1l1.7-10.5l1.7,25.2l1.7,5.3L4,273.5l1.7-10.2L7.4,245l1.7-4.4l1.7,24.1l1.7,0.6l1.7-14.9l1.7,21.3l1.7,14.7l1.7,12.4
+					l1.7,2.7l1.7,4.9l1.7-3.1l1.7-28l1.7,27.3l1.7-23.9l1.7,12l1.7,3.7l1.7-2.1l1.7,3.4l1.7-27l1.7-16.5l1.7-0.6l1.7-24.1l1.7-5.8
+					l1.7,30.6l1.7,20l1.7,18.1l1.7,21.2l1.7,3.7l1.7-24.9l1.7,1.3l1.7,9.7l1.7,9.7l1.7,12.1l1.7,9.2l1.7-4.5l1.7,16.2l1.7,11.2
+					l1.7-18.6l1.7-6.6l1.7,13.1l1.7-14.1l1.7-20l1.7-30.7l1.7,30.2l1.7-4.4l1.7-12.4l1.7-20.9l1.7,16.3l1.7-5.2l1.7,17.3l1.7-1.8
+					l1.7-4.7l1.7-9.4l1.7-8.9l1.7,20.9l1.7,17.3l1.7,16.5l1.7,0.6l1.7-9.1l1.7-1.6l1.7-11.6l1.7,15.7l1.7,7.1l1.7-8.6l1.7,12.9
+					l1.7,6.3l1.7-7.3l1.7-15l1.7-1.6l1.7-1.3l1.7-2.9l1.7,22.5l1.7-5.8l1.7,9.7l1.7,14.4l1.7-3.2l1.7-12.8l1.7,2.7l1.7-20.7
+					l1.7-22.6l1.7-42.5l1.7-4.9l1.7-41.4l1.7-43.3l1.7,16.7L148,196l1.7,12.3l1.7-31.5l1.7,3.2l1.7-22l1.7,11.6l1.7,42.8l1.7-42.4
+					l1.7,10.5l1.7,21.5l1.7-30.1l1.7-11l1.7,40.3l1.7,13.3l1.7-5.5l1.7-46.2l1.7-5.3l1.7-12l1.7-16.7l1.7-6.1l1.7,12.1l1.7,0.2
+					l1.7-33l1.7-0.3l1.7-18.4l1.7-9.4l1.7,29.4l1.7,28.5l1.7-11.5l1.7,61.8l1.7-15.4l1.7-6.3l1.7-17l1.7-25.2l1.7,35.4l1.7-35.4
+					l1.7,28.3l1.7,21.8l1.7-4.7l1.7-49.8l1.7-9.1l1.7,31l1.7,7.8l1.7,57.4l1.7,25.9l1.7,30.9l1.7-42.2l1.7-30.1l1.7,1.1l1.7,13.9
+					l1.7-3.7l1.7-16.2l1.7-18.3l1.7-19.6l1.7,20.5l1.7,18.8l1.7,8.4l1.7,28.9l1.7,23.3l1.7-1.1l1.7-9.5l1.7-5.2l1.7-7.6l1.7,4.9
+					l1.7,12l1.7,13.3l1.7,15.5l1.7-25.5l1.7,23.6l1.7-5.3l1.7-24.3l1.7-20.5l1.7,18.6l1.7,15.5l1.7-6.8l1.7-23.4l1.7-8.4l1.7,20
+					l1.7-9.7l1.7,1.1l1.7-18.4l1.7,20l1.7-20.9l1.7,11.5l1.7-2.7l1.7,13.1l1.7,10.2l1.7,4l1.7-16.3l1.7,24.9l1.7,6.6l1.7-65.8
+					l1.7,21.7l1.7,31.7l1.7-11.6l1.7,11.5l1.7-39.3l1.7-44.3l1.7-31l1.7-33.8l1.7-66l1.7,29.1l1.7,5.2l1.7,2.9l1.7,7.9l1.7,4.4
+					l1.7-2.7l1.7-8.2l1.7-14.2l1.7,4.9l1.7-0.3l1.7,27.3l1.7,0.2l1.7-9.1l1.7,4.2l1.7-1.3l1.7-13.1l1.7,32.3l1.7-6.8l1.7,1.8l1.7,1
+					l1.7,27.2l1.7,5.5l1.7,9.1l1.7,19.2l1.7-5.7l1.7-21.5l1.7,9.7l1.7,6.3l1.7,6.5l1.7,8.6l1.7,18.9l1.7,0.2l1.7,15l1.7-21.7
+					l1.7-3.9l1.7,27l1.7-7.6l1.7-9.7l1.7,4l1.7,13.9l1.7-16.5l1.7,8.7l1.7,10.3l1.7-8.7l1.7-6.8l1.7,7l1.7,9.7l1.7-10.8l1.7,33
+					l1.7-7.1l1.7-12.8l1.7,8.9l1.7,9.4l1.7-7.1l1.7,17.3l1.7,1.6l1.7-1.9l1.7-6.1l1.7,5.7l1.7,4.9l1.7-12.1l1.7-23l1.7-3.2l1.7-3.7
+					l1.7-8.2l1.7,8.7l1.7,15.5l1.7,12.4l1.7,2.9l1.7-3.6l1.7-3.7l1.7,10.8l1.7,12.9l1.7,3.1l1.7,3.6l1.7,0.8l1.7,24.3l1.7,4.2
+					l1.7-2.1l1.7,5.7l1.7-12.9l1.7-13.1l1.7-8.2l1.7,8.4l1.7-34.3l1.7-23.9l1.7-3.1l1.7-1.9l1.7,16.2l1.7,6.8l1.7-20.5l1.7-6.1
+					l1.7-4.7l1.7-3.7l1.7,25.2l1.7,15l1.7,15l1.7,5.7l1.7,22.1l1.7,0.2l1.7,0.6l1.7,10.2l1.7,34.4l1.7-11.2l1.7-3.4l1.7,1.9l1.7-8.7
+					l1.7-2.4l1.7,1.6l1.7-0.8l1.7,11.5l1.7,22.3l1.7,15.5l1.7-0.3l1.7-7.4l1.7-7.9l1.7-11.3l1.7-1.5l1.7-8.7l1.7,11l1.7-29.6
+					l1.7,9.2l1.7-20.2l1.7-20.7l1.7-11.6l1.7-3.6l1.7,15.5l1.7,17.9l1.7,12.1l1.7,20.2l1.7,1.5L532,310l1.7-15.8l1.7-4l1.7,15.2
+					l1.7-4l1.7,17.9l1.7-12.6l1.7-14.1l1.7,14.6l1.7-18.6l1.7,6l1.7,21.8l1.7,4.4l1.7,10.8l1.7,1.1l1.7-27.6l1.7-2.4l1.7,23.6
+					l1.7-25.4l1.7,8.4l1.7,10l1.7-46.7l1.7-16l1.7-1.3l1.7,21.5l1.7,27.3l1.7,9.1l1.7-7.9l1.7,2.9l1.7,4.4l1.7,14.1l1.7,12.6
+					l1.7-10.8l1.7-8.2l1.7-13.4l1.7-2.6l1.7,2.6l1.7,9.1l1.7,2.6l1.7-21l1.7,0.3l1.7,17.3l1.7,5.3l1.7,13.9l1.7-2.9l1.7-6.6l1.7-4
+					l1.7,12l1.7-0.8l1.7-5.3l1.7,3.1l1.7-1.8l1.7-2.1l1.7,8.1l1.7,5.7l1.7-2.3l1.7,11.6l1.7-6.6l1.7-10.3l1.7,3.6l1.7,0.5l1.7-7
+					l1.7,9.1l1.7,0.3l1.7-4l1.7-8.6l1.7,16.5l1.7-8.1l1.7-0.8l1.7-8.7l1.7-10l1.7,0.5l1.7,9.5l1.7,16.7l1.7,25.2l1.7-3.7l1.7-2.4
+					l1.7-0.2l1.7,10.8l1.7-4.9l1.7-3.6l1.7-3.1l1.7,28.8l1.7,5.8l1.7-2.3l1.7-17.3l1.7-0.2l1.7,1.1l1.7,5l1.7-17l1.7,4l1.7,3.4
+					l1.7-2.7l1.7,6.5l1.7-2.4l1.7,8.1l1.7,4.5l1.7-5.2l1.7-10l1.7,10.7l1.7-9.2l1.7-9.7l1.7-1.8l1.7-1.1l1.7,5l1.7-5.8l1.7-11.6
+					l1.7,3.2l1.7,7.4l1.7-2.1l1.7,6.8l1.7-8.2l1.7,7.3l1.7-1.1l1.7,1.5l1.7-2.9l1.7,15.7l1.7-8.7l1.7-6.1l1.7,7.6l1.7-12.9l1.7-1.6
+					l1.7,6.3l1.7-11l1.7-12.8l1.7,3.7l1.7-33l1.7-4l1.7,13.7l1.7-3.4l1.7,12.8l1.7,16.8l1.7,11l1.7,13.6l1.7,5.2l1.7-7.9l1.7,6
+					l1.7-23.1l1.7-1l1.7,0.5l1.7,3.6l1.7,2.4l1.7,8.9l1.7-0.6l1.7,0.6l1.7-3.1l1.7,2.1l1.7,8.2h1.7l1.7,14.7l1.7-17.1l1.7-4.2
+					l1.7-1.5l1.7-2.4l1.7,6.8l1.7-1.8l1.7-12.3l1.7-3.1l1.7-1.5l1.7-5.7l1.7,3.9l1.7-25.4h1.7l1.7,14.9l1.7,5.3l1.7,5.3l1.7-13.1
+					l1.7-1.3l1.7,6.8l1.7-20.4l1.7-22.3l1.7,8.9l1.7-1.6l1.7-17l1.7,13.9"/>
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)">
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_15_" points="16,509 16,79 880,79 880,509 				"/>
+			</defs>
+			<clipPath id="SVGID_16_">
+				<use xlink:href="#SVGID_15_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st27">
+				<path d="M-44,0"/>
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)">
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_17_" points="16,509 16,79 880,79 880,509 				"/>
+			</defs>
+			<clipPath id="SVGID_18_">
+				<use xlink:href="#SVGID_17_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st28">
+				<path d="M-44,0"/>
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)">
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_19_" points="16,509 16,79 880,79 880,509 				"/>
+			</defs>
+			<clipPath id="SVGID_20_">
+				<use xlink:href="#SVGID_19_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st29">
+			</g>
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_21_" points="16,509 16,79 880,79 880,509 				"/>
+			</defs>
+			<clipPath id="SVGID_22_">
+				<use xlink:href="#SVGID_21_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st30">
+			</g>
+		</g>
+		<g>
+			<defs>
+				<polyline id="SVGID_23_" points="16,509 16,79 880,79 880,509 				"/>
+			</defs>
+			<clipPath id="SVGID_24_">
+				<use xlink:href="#SVGID_23_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st31">
+			</g>
+		</g>
+		<g transform="translate(74,531) scale(1 1)">
+		</g>
+	</g>
+	<g class="st16">
+		<path class="st32" d="M866,531"/>
+		<path class="st33" d="M865.5,531.5 M865.5,531.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 262.9378 20)" class="st10 st11">Weizen (Commodities Landwirtschaft &amp; Fischerei)</text>
+	<g transform="translate(40,13)">
+		<g>
+			<g>
+				<g transform="translate(8,3)">
+					<path class="st34" d="M-21,41h10"/>
+					<text transform="matrix(1 0 0 1 -5.9567 44)" class="st13 st14">Wheat</text>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g class="st16">
+		<text transform="matrix(1 0 0 1 71.6535 527)" class="st17 st13 st15">11 Mai 2009</text>
+		<text transform="matrix(1 0 0 1 154.5928 527)" class="st17 st13 st15">26 Apr 2010</text>
+		<text transform="matrix(1 0 0 1 238.0936 527)" class="st17 st13 st15">11 Apr 2011</text>
+		<text transform="matrix(1 0 0 1 319.0041 527)" class="st17 st13 st15">26 Mär 2012</text>
+		<text transform="matrix(1 0 0 1 402.1338 527)" class="st17 st13 st15">11 Mär 2013</text>
+		<text transform="matrix(1 0 0 1 484.5164 527)" class="st17 st13 st15">24 Feb 2014</text>
+		<text transform="matrix(1 0 0 1 570.0558 527)" class="st17 st13 st15">9 Feb 2015</text>
+		<text transform="matrix(1 0 0 1 650.5879 527)" class="st17 st13 st15">25 Jan 2016</text>
+		<text transform="matrix(1 0 0 1 736.1273 527)" class="st17 st13 st15">9 Jan 2017</text>
+		<text transform="matrix(1 0 0 1 815.275 527)" class="st17 st13 st15">25 Dez 2017</text>
+	</g>
+	<g class="st16">
+		<text transform="matrix(1 0 0 1 -7.8581 491)" class="st17 st13 st15">3.5</text>
+		<text transform="matrix(1 0 0 1 0.4818 459)" class="st17 st13 st15">4</text>
+		<text transform="matrix(1 0 0 1 -7.8581 427)" class="st17 st13 st15">4.5</text>
+		<text transform="matrix(1 0 0 1 0.4818 394)" class="st17 st13 st15">5</text>
+		<text transform="matrix(1 0 0 1 -7.8581 362)" class="st17 st13 st15">5.5</text>
+		<text transform="matrix(1 0 0 1 0.4818 330)" class="st17 st13 st15">6</text>
+		<text transform="matrix(1 0 0 1 -7.8581 297)" class="st17 st13 st15">6.5</text>
+		<text transform="matrix(1 0 0 1 0.4818 265)" class="st17 st13 st15">7</text>
+		<text transform="matrix(1 0 0 1 -7.8581 233)" class="st17 st13 st15">7.5</text>
+		<text transform="matrix(1 0 0 1 0.4818 200)" class="st17 st13 st15">8</text>
+		<text transform="matrix(1 0 0 1 -7.8581 168)" class="st17 st13 st15">8.5</text>
+		<text transform="matrix(1 0 0 1 0.4818 136)" class="st17 st13 st15">9</text>
+		<text transform="matrix(1 0 0 1 -7.8581 103)" class="st17 st13 st15">9.5</text>
+	</g>
+	<g class="st16">
+		<text transform="matrix(1 0 0 1 895.0433 497)" class="st17 st13 st15">45 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 472)" class="st17 st13 st15">50 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 448)" class="st17 st13 st15">55 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 423)" class="st17 st13 st15">60 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 398)" class="st17 st13 st15">65 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 374)" class="st17 st13 st15">70 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 349)" class="st17 st13 st15">75 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 325)" class="st17 st13 st15">80 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 300)" class="st17 st13 st15">85 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 276)" class="st17 st13 st15">90 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 251)" class="st17 st13 st15">95 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 226)" class="st17 st13 st15">100 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 202)" class="st17 st13 st15">105 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 177)" class="st17 st13 st15">110 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 153)" class="st17 st13 st15">115 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 128)" class="st17 st13 st15">120 %</text>
+		<text transform="matrix(1 0 0 1 895.0433 104)" class="st17 st13 st15">125 %</text>
+	</g>
+	<g transform="translate(0,-9999)" class="st16">
+		<path class="st35" d="M-39.5,1.5h10c3,0,3,0,3,3v10c0,3,0,3-3,3h-10c-3,0-3,0-3-3v-10C-42.5,1.5-42.5,1.5-39.5,1.5"/>
+		<path class="st36" d="M-39.5,1.5h10c3,0,3,0,3,3v10c0,3,0,3-3,3h-10c-3,0-3,0-3-3v-10C-42.5,1.5-42.5,1.5-39.5,1.5"/>
+		<path class="st37" d="M-39.5,1.5h10c3,0,3,0,3,3v10c0,3,0,3-3,3h-10c-3,0-3,0-3-3v-10C-42.5,1.5-42.5,1.5-39.5,1.5"/>
+		<path class="st38" d="M-40.5,0.5h10c3,0,3,0,3,3v10c0,3,0,3-3,3h-10c-3,0-3,0-3-3v-10C-43.5,0.5-43.5,0.5-40.5,0.5"/>
+	</g>
+	<desc>Created with Highstock 2.1.10</desc>
+	<rect x="66" y="4921" class="st18" width="864" height="430"/>
+	<path class="st39" d="M66,5342.5h864v-28H66"/>
+	<path class="st19" d="M66,5286.5h864v-28H66"/>
+	<path class="st19" d="M66,5230.5h864v-28H66"/>
+	<path class="st19" d="M66,5174.5h864v-28H66"/>
+	<path class="st19" d="M66,5119.5h864v-28H66"/>
+	<path class="st19" d="M66,5063.5h864v-28H66"/>
+	<path class="st19" d="M66,5007.5h864v-28H66"/>
+	<path class="st19" d="M66,4951.5h864v-28H66"/>
+	<g class="st16">
+		<path class="st22" d="M65.5,4921v422 M65.5,4921v422"/>
+		<path class="st22" d="M148.5,4921v422 M148.5,4921v422"/>
+		<path class="st22" d="M230.5,4921v422 M230.5,4921v422"/>
+		<path class="st22" d="M313.5,4921v422 M313.5,4921v422"/>
+		<path class="st22" d="M396.5,4921v422 M396.5,4921v422"/>
+		<path class="st22" d="M479.5,4921v422 M479.5,4921v422"/>
+		<path class="st22" d="M561.5,4921v422 M561.5,4921v422"/>
+		<path class="st22" d="M644.5,4921v422 M644.5,4921v422"/>
+		<path class="st22" d="M727.5,4921v422 M727.5,4921v422"/>
+		<path class="st22" d="M809.5,4921v422 M809.5,4921v422"/>
+		<path class="st22" d="M892.5,4921v422 M892.5,4921v422"/>
+	</g>
+	<g class="st16">
+		<path class="st23" d="M79.5,5373"/>
+		<path class="st23" d="M239.5,5373"/>
+		<path class="st23" d="M399.5,5373"/>
+		<path class="st23" d="M559.5,5373"/>
+		<path class="st23" d="M720.5,5373"/>
+		<path class="st23" d="M880.5,5373"/>
+	</g>
+	<g class="st16">
+		<path class="st24" d="M66,5351.5h864"/>
+	</g>
+	<g class="st16">
+		<g class="st40">
+			<defs>
+				<rect id="SVGID_25_" x="66" y="4921" width="864" height="430"/>
+			</defs>
+			<clipPath id="SVGID_26_">
+				<use xlink:href="#SVGID_25_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st41">
+				<path class="st42" d="M6,4982.5l1.7-8.6l1.7-15.3l1.7,10l1.7,3.1l1.7-21.2l1.7,10l1.7,27.3l1.7,5.9l1.7,23.7l1.7,11.2l1.7,26.8
+					l1.7-39.3l1.7-108.2l1.7,0.8l1.7,7.8l1.7,11.7l1.7,12.5l1.7-61.3l1.7,46.8l1.7,49.1l1.7-41l1.7-12.8l1.7,37.4l1.7,46l1.7,0.8
+					h1.7l1.7,35.4l1.7-25.4l1.7-3.9l1.7,1.1l1.7,25.4l1.7-7l1.7-22.3l1.7,4.2l1.7-13.9l1.7,21.5l1.7,81.7l1.7,28.7l1.7,18.1
+					l1.7,14.8l1.7,15.1l1.7-15.3l1.7,7.8l1.7-1.7l1.7,10.9l1.7,11.7l1.7-6.4l1.7,5l1.7-3.6l1.7,1.4l1.7,6.8l1.7,3.7l1.7-0.8l1.7,1.4
+					l1.7,1.4l1.7,5l1.7-3.6l1.7,26.5l1.7,5l1.7-12.3l1.7,0.6l1.7-10l1.7,3.3l1.7,11.2l1.7,17.6l1.7-22l1.7-10.3l1.7,1.1l1.7-7.5
+					l1.7-36l1.7-7.3l1.7-1.6l1.7,2.8l1.7-30.1l1.7,29.3l1.7,18.1l1.7,6.6l1.7,1.3l1.7-7.8l1.7-7.2l1.7-11.4l1.7-2.2l1.7-1.9
+					l1.7-12.7l1.7,19.5l1.7-12.1l1.7-22.4l1.7,10.9l1.7,13.7l1.7,9.2l1.7,7.1l1.7,10.2l1.7-0.3l1.7,5.7l1.7-13.8l1.7,9.8l1.7-9.5
+					l1.7,1.1l1.7,1.4l1.7-14.4l1.7-41.4l1.7,11.4l1.7-5.3l1.7,15.9l1.7-19.5l1.7-4.2l1.7-23.1l1.7,16.7l1.7-32.3l1.7-10.2l1.7,25.8
+					l1.7,13.9l1.7,8.9l1.7,3.9l1.7,2.8l1.7,7.8l1.7,5.6l1.7-27.9l1.7,0.8h1.7l1.7-12.5l1.7-12.7l1.7-0.1l1.7-5l1.7,1.1l1.7,0.8
+					l1.7,0.3l1.7,1.7l1.7-14.5l1.7-18.4l1.7-38.5l1.7,1.7l1.7-2.2l1.7,7.2l1.7-14.2l1.7,27.6l1.7,3.9l1.7,2.2l1.7,7.6l1.7-5.4
+					l1.7,6.1l1.7,6.7l1.7-14l1.7-10l1.7-18.5l1.7-9.9l1.7-1.7l1.7-11.2l1.7,15.2l1.7,9.2l1.7,13.5l1.7-3.8l1.7,11.2l1.7-6l1.7-5
+					l1.7-5.6l1.7,2.8l1.7,0.5l1.7,2l1.7,8.9l1.7,1.7l1.7-1.7l1.7,8.1l1.7,1.4l1.7,13.9l1.7,9.5l1.7-6.1l1.7-4.7l1.7-24.3l1.7-45.2
+					l1.7-5l1.7,21.5l1.7,5.6l1.7-32.9l1.7,12.8l1.7-3.9l1.7,7.5l1.7-23.4l1.7,13.7l1.7,15.1l1.7,7.5l1.7,5l1.7,12l1.7-9.2l1.7,20.1
+					l1.7,3.3l1.7,11.7l1.7,4.5l1.7-8.1l1.7,3.6l1.7-20.6l1.7-9.2l1.7,3.6l1.7,10l1.7-20.1l1.7,12.3l1.7-9.8l1.7-1.1l1.7,9.5
+					l1.7-17.3l1.7,17.8l1.7-10.3l1.7,9.5l1.7,3.3l1.7-0.3l1.7,9.8l1.7,15.9l1.7,2.5l1.7-9.5l1.7-1.1l1.7,2l1.7,0.6l1.7-8.4l1.7-5.3
+					l1.7,10.8l1.7,5.4l1.7,1.1l1.7-3l1.7-13.1l1.7,0.6l1.7-5.4l1.7-8.9l1.7-6.6l1.7-4.3l1.7,5.7l1.7-10.9l1.7-12l1.7,2.9l1.7-21
+					l1.7-1.9l1.7,10.8l1.7-1.4l1.7-8.9l1.7-4.2l1.7,3.1l1.7-7.8l1.7,10.6l1.7,5.9l1.7,12.5l1.7-16.7l1.7-4.2l1.7,3.3l1.7-0.8
+					l1.7,4.4l1.7,2.8l1.7-1.7l1.7-4.7l1.7-1.1l1.7-7.5l1.7,4.3l1.7-18.2l1.7,16.7l1.7-0.3l1.7-2l1.7,9.4l1.7,11.8l1.7,2.8l1.7,4.7
+					l1.7-7.8l1.7-5.4l1.7,4l1.7,10.6l1.7-8.9l1.7,7.8l1.7-9.2l1.7-3.6l1.7,0.9l1.7-0.7l1.7-4.7l1.7,6.7h1.7l1.7,6.2l1.7,2.2l1.7-7.5
+					l1.7-8.3l1.7,1.8l1.7-0.2l1.7,3.4l1.7-15.3l1.7-7l1.7,2.5l1.7,0.8l1.7-6.4l1.7-1.1l1.7-12.3l1.7,13.9l1.7-8.4l1.7-0.6l1.7,6.1
+					l1.7,0.8l1.7,0.6l1.7,13.3l1.7,3.5l1.7,7.1l1.7-2.3l1.7,29.6h1.7l1.7,14.2l1.7,3.6l1.7,10.6l1.7-16.2l1.7,0.3l1.7,17.8l1.7,18.1
+					l1.7,21.3l1.7-20.5l1.7,10.9l1.7,7l1.7,10.6l1.7,5.3l1.7,10.4l1.7-0.9l1.7,2.2l1.7,25.6l1.7-13.4l1.7,10.9l1.7,5l1.7,13.7
+					l1.7,6.7l1.7-14.7l1.7-21.4l1.7,8.5l1.7-5.1l1.7-18l1.7,13.7l1.7-51.6l1.7,3.6l1.7,4.2l1.7-7.8l1.7,7.8l1.7-29.5l1.7,2l1.7,4.7
+					l1.7,4.3l1.7-4.7l1.7-5.3l1.7,7.2l1.7-13.7l1.7-11.4l1.7,16l1.7,5.4l1.7,4.1l1.7-1.8l1.7,33.2l1.7,12.3l1.7,0.8l1.7,6.1l1.7-5
+					l1.7-12.1l1.7-32.2l1.7,23.4l1.7-3.9l1.7,23.4l1.7-5l1.7,3.3l1.7-11.7l1.7,5.7l1.7,5.7l1.7,9.8l1.7,0.3l1.7,15.9l1.7-3.3
+					l1.7-2.1l1.7,6l1.7-4.1l1.7-3.7l1.7,2l1.7-0.6l1.7,1.1l1.7-4.6l1.7-4.7l1.7,5.8l1.7,4.8l1.7-0.7l1.7,8.9l1.7,3.9l1.7,6l1.7-11.5
+					l1.7-3.1l1.7,0.6l1.7,4.4l1.7-0.8l1.7-2l1.7-5.5l1.7,9.5l1.7,2.9l1.7,2.5l1.7,0.9l1.7,13h1.7l1.7-4.2l1.7-4.7l1.7,15.2l1.7,9.8
+					l1.7,8.9l1.7-4.3l1.7-3.1l1.7,12.9l1.7,1.4l1.7,0.9l1.7,12.4l1.7,0.9l1.7-3.3l1.7-3.5l1.7,10.6l1.7-2.2l1.7-2.6l1.7-2.1l1.7,9.3
+					l1.7,4.9l1.7,0.3l1.7-19.9l1.7,10.9l1.7-6.3l1.7,1.5l1.7-1.3l1.7-12.3l1.7-7.2l1.7,0.6l1.7-8.9l1.7-1.4l1.7-2.7l1.7,0.7l1.7,8.6
+					l1.7-15.1l1.7-3.3l1.7,14.8l1.7,13.3l1.7,19.2l1.7-8l1.7-15.4l1.7,11.7l1.7-14.2l1.7-22.6l1.7-21.8l1.7-22.5l1.7-3.7l1.7-8.4
+					l1.7-7.1l1.7-17.5l1.7,8.1l1.7,4.7l1.7,11l1.7,3.8l1.7,17.6l1.7-17.3l1.7-14.5l1.7-33.5l1.7,28.2l1.7-27l1.7-5.5l1.7,23
+					l1.7-45.7l1.7,43.8l1.7,19.3l1.7,18.1l1.7,9.5l1.7,7l1.7,5.2l1.7,14.9l1.7-4.5l1.7,2.2l1.7,2l1.7-5.2l1.7,8.1l1.7,5.2l1.7,7.5
+					l1.7-3.3l1.7-0.8l1.7-0.3l1.7,0.2l1.7,11.5l1.7-6.4l1.7-3.6l1.7,2.8l1.7,12.9l1.7-16.2l1.7-10.7l1.7-8.4l1.7-18.2l1.7-4l1.7-2.1
+					l1.7-1.4l1.7-4.6l1.7,1.1l1.7,8.3l1.7-21l1.7-16.2l1.7,5.2l1.7,3l1.7,5.3l1.7-16.7l1.7-23.5l1.7,14l1.7-25.7l1.7-4.6l1.7,0.1
+					l1.7-17.7l1.7,24l1.7,7l1.7,16.6l1.7-18.1l1.7,31.8l1.7,7.2l1.7-5.3l1.7-0.2l1.7-8.6l1.7-29.9l1.7,47l1.7-16.8l1.7,7.2l1.7,7.8
+					l1.7,7l1.7,2.4l1.7-17.2l1.7-7.2l1.7-6.4l1.7,1.7l1.7-10.3l1.7-7.9l1.7,3.7l1.7-1.6"/>
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)" class="st40">
+		</g>
+		<g class="st40">
+			<defs>
+				<rect id="SVGID_27_" x="66" y="4921" width="864" height="430"/>
+			</defs>
+			<clipPath id="SVGID_28_">
+				<use xlink:href="#SVGID_27_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st43">
+				<path d="M6,4842"/>
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)" class="st40">
+		</g>
+		<g class="st40">
+			<defs>
+				<rect id="SVGID_29_" x="66" y="4921" width="864" height="430"/>
+			</defs>
+			<clipPath id="SVGID_30_">
+				<use xlink:href="#SVGID_29_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st44">
+				<path d="M6,4842"/>
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)" class="st40">
+		</g>
+		<g class="st40">
+			<defs>
+				<rect id="SVGID_31_" x="66" y="4921" width="864" height="430"/>
+			</defs>
+			<clipPath id="SVGID_32_">
+				<use xlink:href="#SVGID_31_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st45">
+			</g>
+		</g>
+		<g class="st40">
+			<defs>
+				<rect id="SVGID_33_" x="66" y="4921" width="864" height="430"/>
+			</defs>
+			<clipPath id="SVGID_34_">
+				<use xlink:href="#SVGID_33_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st46">
+			</g>
+		</g>
+		<g class="st40">
+			<defs>
+				<rect id="SVGID_35_" x="66" y="4921" width="864" height="430"/>
+			</defs>
+			<clipPath id="SVGID_36_">
+				<use xlink:href="#SVGID_35_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(60,79) scale(1 1)" class="st47">
+			</g>
+		</g>
+		<g transform="translate(60,79) scale(1 1)" class="st40">
+			<path d="M869,5036.4l2,2l-2,2l-2-2L869,5036.4z"/>
+		</g>
+		<g class="st40">
+			<defs>
+				<line id="SVGID_37_" x1="944" y1="5803" x2="80" y2="5803"/>
+			</defs>
+			<defs>
+				<line id="SVGID_38_" x1="80" y1="5373" x2="944" y2="5373"/>
+			</defs>
+			<clipPath id="SVGID_39_">
+				<use xlink:href="#SVGID_37_"  style="overflow:visible;"/>
+			</clipPath>
+			<clipPath id="SVGID_40_" class="st48">
+				<use xlink:href="#SVGID_38_"  style="overflow:visible;"/>
+			</clipPath>
+			<g transform="translate(74,531) scale(1 1)" class="st49">
+				
+					<linearGradient id="SVGID_41_" gradientUnits="userSpaceOnUse" x1="-328.1094" y1="-9.8659" x2="-328.1094" y2="-9.8659" gradientTransform="matrix(836 0 0 -36.6667 274335.3438 4483.5854)">
+					<stop  offset="0" style="stop-color:#004390;stop-opacity:0.45"/>
+					<stop  offset="1" style="stop-color:#004390;stop-opacity:0.15"/>
+				</linearGradient>
+				<path class="st50" d="M35.8,4845.3"/>
+				<path class="st51" d="M35.8,4845.3"/>
+			</g>
+		</g>
+		<g transform="translate(74,531) scale(1 1)" class="st40">
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 357.68 4862)" class="st10 st11">Gas natural (Commodities Erdoel/gas)</text>
+	<g transform="translate(40,13)" class="st16">
+		<g class="st40">
+			<g>
+				<g transform="translate(8,3)">
+					<path class="st52" d="M6,4853h10"/>
+					<text transform="matrix(1 0 0 1 21.0433 4856)" class="st13 st14" style="fill:#333333;">Gas natural</text>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g class="st16">
+		<text transform="matrix(1 0 0 1 121.606 5369)" class="st17 st13 st15">11 Mai 2009</text>
+		<text transform="matrix(1 0 0 1 204.4977 5369)" class="st17 st13 st15">26 Apr 2010</text>
+		<text transform="matrix(1 0 0 1 287.951 5369)" class="st17 st13 st15">11 Apr 2011</text>
+		<text transform="matrix(1 0 0 1 368.8139 5369)" class="st17 st13 st15">26 Mär 2012</text>
+		<text transform="matrix(1 0 0 1 451.8961 5369)" class="st17 st13 st15">11 Mär 2013</text>
+		<text transform="matrix(1 0 0 1 534.2313 5369)" class="st17 st13 st15">24 Feb 2014</text>
+		<text transform="matrix(1 0 0 1 619.7231 5369)" class="st17 st13 st15">9 Feb 2015</text>
+		<text transform="matrix(1 0 0 1 700.2076 5369)" class="st17 st13 st15">25 Jan 2016</text>
+		<text transform="matrix(1 0 0 1 785.6995 5369)" class="st17 st13 st15">9 Jan 2017</text>
+		<text transform="matrix(1 0 0 1 864.7997 5369)" class="st17 st13 st15">25 Dez 2017</text>
+	</g>
+	<g class="st16">
+		<text transform="matrix(1 0 0 1 36.5804 5345)" class="st17 st13 st15">0.15</text>
+		<text transform="matrix(1 0 0 1 42.1419 5317)" class="st17 st13 st15">0.2</text>
+		<text transform="matrix(1 0 0 1 36.5804 5289)" class="st17 st13 st15">0.25</text>
+		<text transform="matrix(1 0 0 1 42.1419 5262)" class="st17 st13 st15">0.3</text>
+		<text transform="matrix(1 0 0 1 36.5804 5234)" class="st17 st13 st15">0.35</text>
+		<text transform="matrix(1 0 0 1 42.1419 5206)" class="st17 st13 st15">0.4</text>
+		<text transform="matrix(1 0 0 1 36.5804 5178)" class="st17 st13 st15">0.45</text>
+		<text transform="matrix(1 0 0 1 42.1419 5150)" class="st17 st13 st15">0.5</text>
+		<text transform="matrix(1 0 0 1 36.5804 5122)" class="st17 st13 st15">0.55</text>
+		<text transform="matrix(1 0 0 1 42.1419 5094)" class="st17 st13 st15">0.6</text>
+		<text transform="matrix(1 0 0 1 36.5804 5066)" class="st17 st13 st15">0.65</text>
+		<text transform="matrix(1 0 0 1 42.1419 5038)" class="st17 st13 st15">0.7</text>
+		<text transform="matrix(1 0 0 1 36.5804 5011)" class="st17 st13 st15">0.75</text>
+		<text transform="matrix(1 0 0 1 42.1419 4983)" class="st17 st13 st15">0.8</text>
+		<text transform="matrix(1 0 0 1 36.5804 4955)" class="st17 st13 st15">0.85</text>
+		<text transform="matrix(1 0 0 1 42.1419 4927)" class="st17 st13 st15">0.9</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 945.0433 5338)" class="st13 st15" style="fill:#606060;">25 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5320)" class="st13 st15" style="fill:#606060;">30 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5301)" class="st13 st15" style="fill:#606060;">35 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5283)" class="st13 st15" style="fill:#606060;">40 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5265)" class="st13 st15" style="fill:#606060;">45 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5247)" class="st13 st15" style="fill:#606060;">50 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5229)" class="st13 st15" style="fill:#606060;">55 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5210)" class="st13 st15" style="fill:#606060;">60 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5192)" class="st13 st15" style="fill:#606060;">65 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5174)" class="st13 st15" style="fill:#606060;">70 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5156)" class="st13 st15" style="fill:#606060;">75 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5138)" class="st13 st15" style="fill:#606060;">80 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5120)" class="st13 st15" style="fill:#606060;">85 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5101)" class="st13 st15" style="fill:#606060;">90 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5083)" class="st13 st15" style="fill:#606060;">95 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5065)" class="st13 st15" style="fill:#606060;">100 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5047)" class="st13 st15" style="fill:#606060;">105 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5029)" class="st13 st15" style="fill:#606060;">110 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 5010)" class="st13 st15" style="fill:#606060;">115 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 4992)" class="st13 st15" style="fill:#606060;">120 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 4974)" class="st13 st15" style="fill:#606060;">125 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 4956)" class="st13 st15" style="fill:#606060;">130 %</text>
+		<text transform="matrix(1 0 0 1 945.0433 4938)" class="st13 st15" style="fill:#606060;">135 %</text>
+	</g>
+</g>
+</svg>
