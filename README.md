@@ -15,7 +15,6 @@ If we are now striving to become independent of fossil fuels, this also means th
 ### Exhibition view
 ![capture](https://github.com/herdav/n/blob/master/doc/n-installation.jpg)
 
-
 ### Technical drawing
 ![capture](https://github.com/herdav/n/blob/master/doc/drawing.png)
 
@@ -24,3 +23,6 @@ If we are now striving to become independent of fossil fuels, this also means th
 
 ### Charts
 ![capture](https://github.com/herdav/n/blob/master/doc/chart-gas-wheat.jpg)
+
+### Circuit boards
+![capture](https://github.com/herdav/n/blob/master/doc/pcb.jpg)
