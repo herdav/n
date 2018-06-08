@@ -21,8 +21,11 @@ If we are now striving to become independent of fossil fuels, this also means th
 ### Visualized control system
 ![capture](https://github.com/herdav/n/blob/master/doc/server.jpg)
 
+### Circuit boards
+![capture](https://github.com/herdav/n/blob/master/doc/boards.jpg)
+
+### Circuit diagram
+![capture](https://github.com/herdav/n/blob/master/doc/diagram.jpg)
+
 ### Charts
 ![capture](https://github.com/herdav/n/blob/master/doc/chart-gas-wheat.jpg)
-
-### Circuit boards
-![capture](https://github.com/herdav/n/blob/master/doc/pcb.jpg)
